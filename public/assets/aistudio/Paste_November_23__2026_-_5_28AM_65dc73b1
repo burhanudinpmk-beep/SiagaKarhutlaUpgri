@@ -1,0 +1,1032 @@
+KUMPULAN SOAL MATEMATIKA DAN FISIKA
+STUDI KASUS SIAGA KARHUTLA
+3 Kota • 15 Titik Api • 75 Soal Pilihan Ganda
+Dokumen ini merupakan pengembangan dari kumpulan soal studi kasus karhutla yang diberikan. Setiap kota memiliki 5 titik api, dan setiap titik api memuat 5 soal (3 soal matematika dan 2 soal fisika). Seluruh angka merupakan data simulasi pembelajaran.
+Petunjuk Pengerjaan
+•	Bacalah setiap situasi pada titik api dengan cermat.
+•	Pilih satu jawaban yang paling tepat dari pilihan A–D.
+•	Gunakan rumus matematika atau fisika yang sesuai dan perhatikan satuannya.
+•	Keterangan unsur C, H, dan O digunakan sebagai konteks pembelajaran lingkungan, bukan hasil pengukuran laboratorium.
+•	Kategori aman, waspada, dan bahaya pada soal merupakan acuan simulasi, bukan standar resmi penetapan status karhutla.
+ 
+KOTA SINGKAWANG
+Setiap titik api berisi lima soal: tiga matematika dan dua fisika.
+Titik Api 1 – Kelurahan Pasiran
+Dalam simulasi pemantauan karhutla di Kota Singkawang, petugas mencatat kondisi pada titik api 1 – kelurahan pasiran. Luas wilayah pemantauan, data penyebaran asap, dan kesiapan sarana digunakan untuk menyelesaikan soal berikut.
+MATEMATIKA 1 – Persentase lahan terdampak
+Dari luas lahan yang dipantau sebesar 18 hektare, sebanyak 5.4 hektare terindikasi terdampak kebakaran. Berapakah persentase lahan yang terdampak?
+•	A. 15,00 %
+•	B. 45,00 %
+•	C. 30,00 %
+•	D. 40,00 %
+Jawaban: C. 30,00 % — Waspada
+Acuan:
+•	Bahaya: lebih dari 30%
+•	Waspada: lebih dari 10% sampai dengan 30%
+•	Aman: 10% atau kurang
+Pembahasan: Persentase = (luas terdampak ÷ luas total) × 100% = (5.4 ÷ 18) × 100% = 30.0%. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena lebih dari 10% sampai dengan 30%.
+Kaitan unsur C, H, dan O: Data persentase membantu petugas memperkirakan bagian lahan yang terdampak. Pembakaran bahan organik melepaskan karbon (C), sedangkan kandungan air yang mengandung hidrogen (H) dan oksigen (O) berkurang saat lahan mengering.
+MATEMATIKA 2 – Kecepatan rata-rata penyebaran asap
+Asap terpantau menyebar sejauh 2 km dalam waktu 10 menit. Jika kecepatannya tetap, berapakah kecepatan rata-rata asap dalam km/jam?
+•	A. 6,00 km/jam
+•	B. 18,00 km/jam
+•	C. 12,00 km/jam
+•	D. 13,00 km/jam
+Jawaban: C. 12,00 km/jam — Waspada
+Acuan:
+•	Bahaya: lebih dari 15 km/jam
+•	Waspada: 5–15 km/jam
+•	Aman: kurang dari 5 km/jam
+Pembahasan: Waktu = 10/60 jam. Kecepatan = jarak ÷ waktu = 2 ÷ (10/60) = 12.0 km/jam. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 5–15 km/jam.
+Kaitan unsur C, H, dan O: Perhitungan kecepatan membantu memperkirakan seberapa cepat asap dapat mencapai permukiman. Asap hasil pembakaran dapat membawa partikel karbon (C) dan uap air yang tersusun dari hidrogen (H) serta oksigen (O).
+MATEMATIKA 3 – Volume persediaan air
+Terdapat 5 tangki air dengan kapasitas masing-masing 800 liter. Berapakah seluruh persediaan air yang tersedia untuk penanganan awal?
+•	A. 2000 liter
+•	B. 6000 liter
+•	C. 4000 liter
+•	D. 4010 liter
+Jawaban: C. 4000 liter — Aman
+Acuan:
+•	Bahaya: kurang dari 2.000 liter
+•	Waspada: 2.000–3.999 liter
+•	Aman: 4.000 liter atau lebih
+Pembahasan: Volume total = jumlah tangki × kapasitas tiap tangki = 5 × 800 = 4000 liter. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 4.000 liter atau lebih.
+Kaitan unsur C, H, dan O: Air (H₂O) mengandung hidrogen (H) dan oksigen (O) serta digunakan untuk membantu pendinginan dan pemadaman. Ketersediaan air penting untuk menghambat pembakaran bahan organik yang mengandung karbon (C).
+FISIKA 1 – Energi listrik alat pemantau
+Alat pemantau kualitas udara memiliki daya 12 watt dan digunakan selama 4 jam setiap hari. Berapakah energi listrik yang digunakan selama 4 hari?
+•	A. 24 Wh
+•	B. 72 Wh
+•	C. 48 Wh
+•	D. 58 Wh
+Jawaban: C. 48 Wh — Aman
+Acuan:
+•	Bahaya: lebih dari 150 Wh
+•	Waspada: lebih dari 120 sampai dengan 150 Wh
+•	Aman: 120 Wh atau kurang
+Pembahasan: Energi listrik E = P × t. E = 12 W × (4 jam/hari × 4 hari) = 48 Wh. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 120 Wh atau kurang.
+Kaitan unsur C, H, dan O: Daya listrik digunakan untuk mengoperasikan sensor yang memantau kondisi udara dan asap. Pemantauan dapat membantu mendeteksi peningkatan partikel hasil pembakaran yang mengandung karbon (C).
+FISIKA 2 – Kalor untuk menaikkan suhu air
+Dalam simulasi, 120 gram air dipanaskan sehingga suhunya naik 45°C. Jika kalor jenis air 1 kal/(g°C), berapakah kalor yang diperlukan?
+•	A. 2700 kalori
+•	B. 8100 kalori
+•	C. 5400 kalori
+•	D. 5410 kalori
+Jawaban: C. 5400 kalori — Aman
+Acuan:
+•	Bahaya: lebih dari 30.000 kalori
+•	Waspada: lebih dari 10.000 sampai dengan 30.000 kalori
+•	Aman: 10.000 kalori atau kurang
+Pembahasan: Kalor Q = m × c × ΔT = 120 × 1 × 45 = 5400 kalori. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 10.000 kalori atau kurang.
+Kaitan unsur C, H, dan O: Konsep kalor menjelaskan energi panas yang dapat menaikkan suhu air. Air tersusun dari hidrogen (H) dan oksigen (O); pengelolaan air dan panas menjadi bagian penting dalam memahami proses pengeringan lahan dan penanganan kebakaran.
+Titik Api 2 – Kelurahan Sedau
+Dalam simulasi pemantauan karhutla di Kota Singkawang, petugas mencatat kondisi pada titik api 2 – kelurahan sedau. Luas wilayah pemantauan, data penyebaran asap, dan kesiapan sarana digunakan untuk menyelesaikan soal berikut.
+MATEMATIKA 1 – Persentase lahan terdampak
+Dari luas lahan yang dipantau sebesar 20 hektare, sebanyak 7 hektare terindikasi terdampak kebakaran. Berapakah persentase lahan yang terdampak?
+•	A. 17,50 %
+•	B. 52,50 %
+•	C. 35,00 %
+•	D. 45,00 %
+Jawaban: C. 35,00 % — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30%
+•	Waspada: lebih dari 10% sampai dengan 30%
+•	Aman: 10% atau kurang
+Pembahasan: Persentase = (luas terdampak ÷ luas total) × 100% = (7 ÷ 20) × 100% = 35.0%. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30%.
+Kaitan unsur C, H, dan O: Data persentase membantu petugas memperkirakan bagian lahan yang terdampak. Pembakaran bahan organik melepaskan karbon (C), sedangkan kandungan air yang mengandung hidrogen (H) dan oksigen (O) berkurang saat lahan mengering.
+MATEMATIKA 2 – Kecepatan rata-rata penyebaran asap
+Asap terpantau menyebar sejauh 1.8 km dalam waktu 9 menit. Jika kecepatannya tetap, berapakah kecepatan rata-rata asap dalam km/jam?
+•	A. 6,00 km/jam
+•	B. 18,00 km/jam
+•	C. 12,00 km/jam
+•	D. 13,00 km/jam
+Jawaban: C. 12,00 km/jam — Waspada
+Acuan:
+•	Bahaya: lebih dari 15 km/jam
+•	Waspada: 5–15 km/jam
+•	Aman: kurang dari 5 km/jam
+Pembahasan: Waktu = 9/60 jam. Kecepatan = jarak ÷ waktu = 1.8 ÷ (9/60) = 12.0 km/jam. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 5–15 km/jam.
+Kaitan unsur C, H, dan O: Perhitungan kecepatan membantu memperkirakan seberapa cepat asap dapat mencapai permukiman. Asap hasil pembakaran dapat membawa partikel karbon (C) dan uap air yang tersusun dari hidrogen (H) serta oksigen (O).
+MATEMATIKA 3 – Volume persediaan air
+Terdapat 5 tangki air dengan kapasitas masing-masing 750 liter. Berapakah seluruh persediaan air yang tersedia untuk penanganan awal?
+•	A. 1875 liter
+•	B. 5625 liter
+•	C. 3750 liter
+•	D. 3760 liter
+Jawaban: C. 3750 liter — Waspada
+Acuan:
+•	Bahaya: kurang dari 2.000 liter
+•	Waspada: 2.000–3.999 liter
+•	Aman: 4.000 liter atau lebih
+Pembahasan: Volume total = jumlah tangki × kapasitas tiap tangki = 5 × 750 = 3750 liter. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 2.000–3.999 liter.
+Kaitan unsur C, H, dan O: Air (H₂O) mengandung hidrogen (H) dan oksigen (O) serta digunakan untuk membantu pendinginan dan pemadaman. Ketersediaan air penting untuk menghambat pembakaran bahan organik yang mengandung karbon (C).
+FISIKA 1 – Energi listrik alat pemantau
+Alat pemantau kualitas udara memiliki daya 14 watt dan digunakan selama 5 jam setiap hari. Berapakah energi listrik yang digunakan selama 5 hari?
+•	A. 35 Wh
+•	B. 105 Wh
+•	C. 70 Wh
+•	D. 80 Wh
+Jawaban: C. 70 Wh — Aman
+Acuan:
+•	Bahaya: lebih dari 150 Wh
+•	Waspada: lebih dari 120 sampai dengan 150 Wh
+•	Aman: 120 Wh atau kurang
+Pembahasan: Energi listrik E = P × t. E = 14 W × (5 jam/hari × 5 hari) = 70 Wh. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 120 Wh atau kurang.
+Kaitan unsur C, H, dan O: Daya listrik digunakan untuk mengoperasikan sensor yang memantau kondisi udara dan asap. Pemantauan dapat membantu mendeteksi peningkatan partikel hasil pembakaran yang mengandung karbon (C).
+FISIKA 2 – Kalor untuk menaikkan suhu air
+Dalam simulasi, 140 gram air dipanaskan sehingga suhunya naik 50°C. Jika kalor jenis air 1 kal/(g°C), berapakah kalor yang diperlukan?
+•	A. 3500 kalori
+•	B. 10500 kalori
+•	C. 7000 kalori
+•	D. 7010 kalori
+Jawaban: C. 7000 kalori — Aman
+Acuan:
+•	Bahaya: lebih dari 30.000 kalori
+•	Waspada: lebih dari 10.000 sampai dengan 30.000 kalori
+•	Aman: 10.000 kalori atau kurang
+Pembahasan: Kalor Q = m × c × ΔT = 140 × 1 × 50 = 7000 kalori. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 10.000 kalori atau kurang.
+Kaitan unsur C, H, dan O: Konsep kalor menjelaskan energi panas yang dapat menaikkan suhu air. Air tersusun dari hidrogen (H) dan oksigen (O); pengelolaan air dan panas menjadi bagian penting dalam memahami proses pengeringan lahan dan penanganan kebakaran.
+Titik Api 3 – Kelurahan Sijangkung
+Dalam simulasi pemantauan karhutla di Kota Singkawang, petugas mencatat kondisi pada titik api 3 – kelurahan sijangkung. Luas wilayah pemantauan, data penyebaran asap, dan kesiapan sarana digunakan untuk menyelesaikan soal berikut.
+MATEMATIKA 1 – Persentase lahan terdampak
+Dari luas lahan yang dipantau sebesar 16 hektare, sebanyak 4.8 hektare terindikasi terdampak kebakaran. Berapakah persentase lahan yang terdampak?
+•	A. 15,00 %
+•	B. 45,00 %
+•	C. 30,00 %
+•	D. 40,00 %
+Jawaban: C. 30,00 % — Waspada
+Acuan:
+•	Bahaya: lebih dari 30%
+•	Waspada: lebih dari 10% sampai dengan 30%
+•	Aman: 10% atau kurang
+Pembahasan: Persentase = (luas terdampak ÷ luas total) × 100% = (4.8 ÷ 16) × 100% = 30.0%. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena lebih dari 10% sampai dengan 30%.
+Kaitan unsur C, H, dan O: Data persentase membantu petugas memperkirakan bagian lahan yang terdampak. Pembakaran bahan organik melepaskan karbon (C), sedangkan kandungan air yang mengandung hidrogen (H) dan oksigen (O) berkurang saat lahan mengering.
+MATEMATIKA 2 – Kecepatan rata-rata penyebaran asap
+Asap terpantau menyebar sejauh 2.5 km dalam waktu 12 menit. Jika kecepatannya tetap, berapakah kecepatan rata-rata asap dalam km/jam?
+•	A. 6,25 km/jam
+•	B. 18,75 km/jam
+•	C. 12,50 km/jam
+•	D. 13,50 km/jam
+Jawaban: C. 12,50 km/jam — Waspada
+Acuan:
+•	Bahaya: lebih dari 15 km/jam
+•	Waspada: 5–15 km/jam
+•	Aman: kurang dari 5 km/jam
+Pembahasan: Waktu = 12/60 jam. Kecepatan = jarak ÷ waktu = 2.5 ÷ (12/60) = 12.5 km/jam. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 5–15 km/jam.
+Kaitan unsur C, H, dan O: Perhitungan kecepatan membantu memperkirakan seberapa cepat asap dapat mencapai permukiman. Asap hasil pembakaran dapat membawa partikel karbon (C) dan uap air yang tersusun dari hidrogen (H) serta oksigen (O).
+MATEMATIKA 3 – Volume persediaan air
+Terdapat 5 tangki air dengan kapasitas masing-masing 900 liter. Berapakah seluruh persediaan air yang tersedia untuk penanganan awal?
+•	A. 2250 liter
+•	B. 6750 liter
+•	C. 4500 liter
+•	D. 4510 liter
+Jawaban: C. 4500 liter — Aman
+Acuan:
+•	Bahaya: kurang dari 2.000 liter
+•	Waspada: 2.000–3.999 liter
+•	Aman: 4.000 liter atau lebih
+Pembahasan: Volume total = jumlah tangki × kapasitas tiap tangki = 5 × 900 = 4500 liter. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 4.000 liter atau lebih.
+Kaitan unsur C, H, dan O: Air (H₂O) mengandung hidrogen (H) dan oksigen (O) serta digunakan untuk membantu pendinginan dan pemadaman. Ketersediaan air penting untuk menghambat pembakaran bahan organik yang mengandung karbon (C).
+FISIKA 1 – Energi listrik alat pemantau
+Alat pemantau kualitas udara memiliki daya 16 watt dan digunakan selama 3 jam setiap hari. Berapakah energi listrik yang digunakan selama 3 hari?
+•	A. 24 Wh
+•	B. 72 Wh
+•	C. 48 Wh
+•	D. 58 Wh
+Jawaban: C. 48 Wh — Aman
+Acuan:
+•	Bahaya: lebih dari 150 Wh
+•	Waspada: lebih dari 120 sampai dengan 150 Wh
+•	Aman: 120 Wh atau kurang
+Pembahasan: Energi listrik E = P × t. E = 16 W × (3 jam/hari × 3 hari) = 48 Wh. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 120 Wh atau kurang.
+Kaitan unsur C, H, dan O: Daya listrik digunakan untuk mengoperasikan sensor yang memantau kondisi udara dan asap. Pemantauan dapat membantu mendeteksi peningkatan partikel hasil pembakaran yang mengandung karbon (C).
+FISIKA 2 – Kalor untuk menaikkan suhu air
+Dalam simulasi, 160 gram air dipanaskan sehingga suhunya naik 55°C. Jika kalor jenis air 1 kal/(g°C), berapakah kalor yang diperlukan?
+•	A. 4400 kalori
+•	B. 13200 kalori
+•	C. 8800 kalori
+•	D. 8810 kalori
+Jawaban: C. 8800 kalori — Aman
+Acuan:
+•	Bahaya: lebih dari 30.000 kalori
+•	Waspada: lebih dari 10.000 sampai dengan 30.000 kalori
+•	Aman: 10.000 kalori atau kurang
+Pembahasan: Kalor Q = m × c × ΔT = 160 × 1 × 55 = 8800 kalori. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 10.000 kalori atau kurang.
+Kaitan unsur C, H, dan O: Konsep kalor menjelaskan energi panas yang dapat menaikkan suhu air. Air tersusun dari hidrogen (H) dan oksigen (O); pengelolaan air dan panas menjadi bagian penting dalam memahami proses pengeringan lahan dan penanganan kebakaran.
+Titik Api 4 – Kelurahan Roban
+Dalam simulasi pemantauan karhutla di Kota Singkawang, petugas mencatat kondisi pada titik api 4 – kelurahan roban. Luas wilayah pemantauan, data penyebaran asap, dan kesiapan sarana digunakan untuk menyelesaikan soal berikut.
+MATEMATIKA 1 – Persentase lahan terdampak
+Dari luas lahan yang dipantau sebesar 25 hektare, sebanyak 8.75 hektare terindikasi terdampak kebakaran. Berapakah persentase lahan yang terdampak?
+•	A. 17,50 %
+•	B. 52,50 %
+•	C. 35,00 %
+•	D. 45,00 %
+Jawaban: C. 35,00 % — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30%
+•	Waspada: lebih dari 10% sampai dengan 30%
+•	Aman: 10% atau kurang
+Pembahasan: Persentase = (luas terdampak ÷ luas total) × 100% = (8.75 ÷ 25) × 100% = 35.0%. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30%.
+Kaitan unsur C, H, dan O: Data persentase membantu petugas memperkirakan bagian lahan yang terdampak. Pembakaran bahan organik melepaskan karbon (C), sedangkan kandungan air yang mengandung hidrogen (H) dan oksigen (O) berkurang saat lahan mengering.
+MATEMATIKA 2 – Kecepatan rata-rata penyebaran asap
+Asap terpantau menyebar sejauh 3 km dalam waktu 15 menit. Jika kecepatannya tetap, berapakah kecepatan rata-rata asap dalam km/jam?
+•	A. 6,00 km/jam
+•	B. 18,00 km/jam
+•	C. 12,00 km/jam
+•	D. 13,00 km/jam
+Jawaban: C. 12,00 km/jam — Waspada
+Acuan:
+•	Bahaya: lebih dari 15 km/jam
+•	Waspada: 5–15 km/jam
+•	Aman: kurang dari 5 km/jam
+Pembahasan: Waktu = 15/60 jam. Kecepatan = jarak ÷ waktu = 3 ÷ (15/60) = 12.0 km/jam. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 5–15 km/jam.
+Kaitan unsur C, H, dan O: Perhitungan kecepatan membantu memperkirakan seberapa cepat asap dapat mencapai permukiman. Asap hasil pembakaran dapat membawa partikel karbon (C) dan uap air yang tersusun dari hidrogen (H) serta oksigen (O).
+MATEMATIKA 3 – Volume persediaan air
+Terdapat 5 tangki air dengan kapasitas masing-masing 700 liter. Berapakah seluruh persediaan air yang tersedia untuk penanganan awal?
+•	A. 1750 liter
+•	B. 5250 liter
+•	C. 3500 liter
+•	D. 3510 liter
+Jawaban: C. 3500 liter — Waspada
+Acuan:
+•	Bahaya: kurang dari 2.000 liter
+•	Waspada: 2.000–3.999 liter
+•	Aman: 4.000 liter atau lebih
+Pembahasan: Volume total = jumlah tangki × kapasitas tiap tangki = 5 × 700 = 3500 liter. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 2.000–3.999 liter.
+Kaitan unsur C, H, dan O: Air (H₂O) mengandung hidrogen (H) dan oksigen (O) serta digunakan untuk membantu pendinginan dan pemadaman. Ketersediaan air penting untuk menghambat pembakaran bahan organik yang mengandung karbon (C).
+FISIKA 1 – Energi listrik alat pemantau
+Alat pemantau kualitas udara memiliki daya 18 watt dan digunakan selama 6 jam setiap hari. Berapakah energi listrik yang digunakan selama 6 hari?
+•	A. 54 Wh
+•	B. 162 Wh
+•	C. 108 Wh
+•	D. 118 Wh
+Jawaban: C. 108 Wh — Aman
+Acuan:
+•	Bahaya: lebih dari 150 Wh
+•	Waspada: lebih dari 120 sampai dengan 150 Wh
+•	Aman: 120 Wh atau kurang
+Pembahasan: Energi listrik E = P × t. E = 18 W × (6 jam/hari × 6 hari) = 108 Wh. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 120 Wh atau kurang.
+Kaitan unsur C, H, dan O: Daya listrik digunakan untuk mengoperasikan sensor yang memantau kondisi udara dan asap. Pemantauan dapat membantu mendeteksi peningkatan partikel hasil pembakaran yang mengandung karbon (C).
+FISIKA 2 – Kalor untuk menaikkan suhu air
+Dalam simulasi, 180 gram air dipanaskan sehingga suhunya naik 60°C. Jika kalor jenis air 1 kal/(g°C), berapakah kalor yang diperlukan?
+•	A. 5400 kalori
+•	B. 16200 kalori
+•	C. 10800 kalori
+•	D. 10810 kalori
+Jawaban: C. 10800 kalori — Waspada
+Acuan:
+•	Bahaya: lebih dari 30.000 kalori
+•	Waspada: lebih dari 10.000 sampai dengan 30.000 kalori
+•	Aman: 10.000 kalori atau kurang
+Pembahasan: Kalor Q = m × c × ΔT = 180 × 1 × 60 = 10800 kalori. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena lebih dari 10.000 sampai dengan 30.000 kalori.
+Kaitan unsur C, H, dan O: Konsep kalor menjelaskan energi panas yang dapat menaikkan suhu air. Air tersusun dari hidrogen (H) dan oksigen (O); pengelolaan air dan panas menjadi bagian penting dalam memahami proses pengeringan lahan dan penanganan kebakaran.
+Titik Api 5 – Kelurahan Sungai Wie
+Dalam simulasi pemantauan karhutla di Kota Singkawang, petugas mencatat kondisi pada titik api 5 – kelurahan sungai wie. Luas wilayah pemantauan, data penyebaran asap, dan kesiapan sarana digunakan untuk menyelesaikan soal berikut.
+MATEMATIKA 1 – Persentase lahan terdampak
+Dari luas lahan yang dipantau sebesar 22 hektare, sebanyak 6.6 hektare terindikasi terdampak kebakaran. Berapakah persentase lahan yang terdampak?
+•	A. 15,00 %
+•	B. 45,00 %
+•	C. 30,00 %
+•	D. 40,00 %
+Jawaban: C. 30,00 % — Waspada
+Acuan:
+•	Bahaya: lebih dari 30%
+•	Waspada: lebih dari 10% sampai dengan 30%
+•	Aman: 10% atau kurang
+Pembahasan: Persentase = (luas terdampak ÷ luas total) × 100% = (6.6 ÷ 22) × 100% = 30.0%. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena lebih dari 10% sampai dengan 30%.
+Kaitan unsur C, H, dan O: Data persentase membantu petugas memperkirakan bagian lahan yang terdampak. Pembakaran bahan organik melepaskan karbon (C), sedangkan kandungan air yang mengandung hidrogen (H) dan oksigen (O) berkurang saat lahan mengering.
+MATEMATIKA 2 – Kecepatan rata-rata penyebaran asap
+Asap terpantau menyebar sejauh 2.4 km dalam waktu 8 menit. Jika kecepatannya tetap, berapakah kecepatan rata-rata asap dalam km/jam?
+•	A. 9,00 km/jam
+•	B. 27,00 km/jam
+•	C. 18,00 km/jam
+•	D. 19,00 km/jam
+Jawaban: C. 18,00 km/jam — Bahaya
+Acuan:
+•	Bahaya: lebih dari 15 km/jam
+•	Waspada: 5–15 km/jam
+•	Aman: kurang dari 5 km/jam
+Pembahasan: Waktu = 8/60 jam. Kecepatan = jarak ÷ waktu = 2.4 ÷ (8/60) = 18.0 km/jam. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 15 km/jam.
+Kaitan unsur C, H, dan O: Perhitungan kecepatan membantu memperkirakan seberapa cepat asap dapat mencapai permukiman. Asap hasil pembakaran dapat membawa partikel karbon (C) dan uap air yang tersusun dari hidrogen (H) serta oksigen (O).
+MATEMATIKA 3 – Volume persediaan air
+Terdapat 5 tangki air dengan kapasitas masing-masing 850 liter. Berapakah seluruh persediaan air yang tersedia untuk penanganan awal?
+•	A. 2125 liter
+•	B. 6375 liter
+•	C. 4250 liter
+•	D. 4260 liter
+Jawaban: C. 4250 liter — Aman
+Acuan:
+•	Bahaya: kurang dari 2.000 liter
+•	Waspada: 2.000–3.999 liter
+•	Aman: 4.000 liter atau lebih
+Pembahasan: Volume total = jumlah tangki × kapasitas tiap tangki = 5 × 850 = 4250 liter. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 4.000 liter atau lebih.
+Kaitan unsur C, H, dan O: Air (H₂O) mengandung hidrogen (H) dan oksigen (O) serta digunakan untuk membantu pendinginan dan pemadaman. Ketersediaan air penting untuk menghambat pembakaran bahan organik yang mengandung karbon (C).
+FISIKA 1 – Energi listrik alat pemantau
+Alat pemantau kualitas udara memiliki daya 20 watt dan digunakan selama 5 jam setiap hari. Berapakah energi listrik yang digunakan selama 5 hari?
+•	A. 50 Wh
+•	B. 150 Wh
+•	C. 100 Wh
+•	D. 110 Wh
+Jawaban: C. 100 Wh — Aman
+Acuan:
+•	Bahaya: lebih dari 150 Wh
+•	Waspada: lebih dari 120 sampai dengan 150 Wh
+•	Aman: 120 Wh atau kurang
+Pembahasan: Energi listrik E = P × t. E = 20 W × (5 jam/hari × 5 hari) = 100 Wh. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 120 Wh atau kurang.
+Kaitan unsur C, H, dan O: Daya listrik digunakan untuk mengoperasikan sensor yang memantau kondisi udara dan asap. Pemantauan dapat membantu mendeteksi peningkatan partikel hasil pembakaran yang mengandung karbon (C).
+FISIKA 2 – Kalor untuk menaikkan suhu air
+Dalam simulasi, 200 gram air dipanaskan sehingga suhunya naik 65°C. Jika kalor jenis air 1 kal/(g°C), berapakah kalor yang diperlukan?
+•	A. 6500 kalori
+•	B. 19500 kalori
+•	C. 13000 kalori
+•	D. 13010 kalori
+Jawaban: C. 13000 kalori — Waspada
+Acuan:
+•	Bahaya: lebih dari 30.000 kalori
+•	Waspada: lebih dari 10.000 sampai dengan 30.000 kalori
+•	Aman: 10.000 kalori atau kurang
+Pembahasan: Kalor Q = m × c × ΔT = 200 × 1 × 65 = 13000 kalori. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena lebih dari 10.000 sampai dengan 30.000 kalori.
+Kaitan unsur C, H, dan O: Konsep kalor menjelaskan energi panas yang dapat menaikkan suhu air. Air tersusun dari hidrogen (H) dan oksigen (O); pengelolaan air dan panas menjadi bagian penting dalam memahami proses pengeringan lahan dan penanganan kebakaran.
+ 
+KABUPATEN KUBU RAYA
+Setiap titik api berisi lima soal: tiga matematika dan dua fisika.
+Titik Api 1 – Kecamatan Sungai Raya
+Dalam simulasi pemantauan karhutla di Kabupaten Kubu Raya, petugas mencatat kondisi pada titik api 1 – kecamatan sungai raya. Luas wilayah pemantauan, data penyebaran asap, dan kesiapan sarana digunakan untuk menyelesaikan soal berikut.
+MATEMATIKA 1 – Persentase lahan terdampak
+Dari luas lahan yang dipantau sebesar 30 hektare, sebanyak 12 hektare terindikasi terdampak kebakaran. Berapakah persentase lahan yang terdampak?
+•	A. 20,00 %
+•	B. 60,00 %
+•	C. 40,00 %
+•	D. 50,00 %
+Jawaban: C. 40,00 % — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30%
+•	Waspada: lebih dari 10% sampai dengan 30%
+•	Aman: 10% atau kurang
+Pembahasan: Persentase = (luas terdampak ÷ luas total) × 100% = (12 ÷ 30) × 100% = 40.0%. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30%.
+Kaitan unsur C, H, dan O: Data persentase membantu petugas memperkirakan bagian lahan yang terdampak. Pembakaran bahan organik melepaskan karbon (C), sedangkan kandungan air yang mengandung hidrogen (H) dan oksigen (O) berkurang saat lahan mengering.
+MATEMATIKA 2 – Kecepatan rata-rata penyebaran asap
+Asap terpantau menyebar sejauh 1.5 km dalam waktu 8 menit. Jika kecepatannya tetap, berapakah kecepatan rata-rata asap dalam km/jam?
+•	A. 5,62 km/jam
+•	B. 16,88 km/jam
+•	C. 11,25 km/jam
+•	D. 12,25 km/jam
+Jawaban: C. 11,25 km/jam — Waspada
+Acuan:
+•	Bahaya: lebih dari 15 km/jam
+•	Waspada: 5–15 km/jam
+•	Aman: kurang dari 5 km/jam
+Pembahasan: Waktu = 8/60 jam. Kecepatan = jarak ÷ waktu = 1.5 ÷ (8/60) = 11.2 km/jam. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 5–15 km/jam.
+Kaitan unsur C, H, dan O: Perhitungan kecepatan membantu memperkirakan seberapa cepat asap dapat mencapai permukiman. Asap hasil pembakaran dapat membawa partikel karbon (C) dan uap air yang tersusun dari hidrogen (H) serta oksigen (O).
+MATEMATIKA 3 – Volume persediaan air
+Terdapat 5 tangki air dengan kapasitas masing-masing 1000 liter. Berapakah seluruh persediaan air yang tersedia untuk penanganan awal?
+•	A. 2500 liter
+•	B. 7500 liter
+•	C. 5000 liter
+•	D. 5010 liter
+Jawaban: C. 5000 liter — Aman
+Acuan:
+•	Bahaya: kurang dari 2.000 liter
+•	Waspada: 2.000–3.999 liter
+•	Aman: 4.000 liter atau lebih
+Pembahasan: Volume total = jumlah tangki × kapasitas tiap tangki = 5 × 1000 = 5000 liter. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 4.000 liter atau lebih.
+Kaitan unsur C, H, dan O: Air (H₂O) mengandung hidrogen (H) dan oksigen (O) serta digunakan untuk membantu pendinginan dan pemadaman. Ketersediaan air penting untuk menghambat pembakaran bahan organik yang mengandung karbon (C).
+FISIKA 1 – Energi listrik alat pemantau
+Alat pemantau kualitas udara memiliki daya 12 watt dan digunakan selama 4 jam setiap hari. Berapakah energi listrik yang digunakan selama 4 hari?
+•	A. 24 Wh
+•	B. 72 Wh
+•	C. 48 Wh
+•	D. 58 Wh
+Jawaban: C. 48 Wh — Aman
+Acuan:
+•	Bahaya: lebih dari 150 Wh
+•	Waspada: lebih dari 120 sampai dengan 150 Wh
+•	Aman: 120 Wh atau kurang
+Pembahasan: Energi listrik E = P × t. E = 12 W × (4 jam/hari × 4 hari) = 48 Wh. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 120 Wh atau kurang.
+Kaitan unsur C, H, dan O: Daya listrik digunakan untuk mengoperasikan sensor yang memantau kondisi udara dan asap. Pemantauan dapat membantu mendeteksi peningkatan partikel hasil pembakaran yang mengandung karbon (C).
+FISIKA 2 – Kalor untuk menaikkan suhu air
+Dalam simulasi, 220 gram air dipanaskan sehingga suhunya naik 70°C. Jika kalor jenis air 1 kal/(g°C), berapakah kalor yang diperlukan?
+•	A. 7700 kalori
+•	B. 23100 kalori
+•	C. 15400 kalori
+•	D. 15410 kalori
+Jawaban: C. 15400 kalori — Waspada
+Acuan:
+•	Bahaya: lebih dari 30.000 kalori
+•	Waspada: lebih dari 10.000 sampai dengan 30.000 kalori
+•	Aman: 10.000 kalori atau kurang
+Pembahasan: Kalor Q = m × c × ΔT = 220 × 1 × 70 = 15400 kalori. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena lebih dari 10.000 sampai dengan 30.000 kalori.
+Kaitan unsur C, H, dan O: Konsep kalor menjelaskan energi panas yang dapat menaikkan suhu air. Air tersusun dari hidrogen (H) dan oksigen (O); pengelolaan air dan panas menjadi bagian penting dalam memahami proses pengeringan lahan dan penanganan kebakaran.
+Titik Api 2 – Kecamatan Rasau Jaya
+Dalam simulasi pemantauan karhutla di Kabupaten Kubu Raya, petugas mencatat kondisi pada titik api 2 – kecamatan rasau jaya. Luas wilayah pemantauan, data penyebaran asap, dan kesiapan sarana digunakan untuk menyelesaikan soal berikut.
+MATEMATIKA 1 – Persentase lahan terdampak
+Dari luas lahan yang dipantau sebesar 28 hektare, sebanyak 9.8 hektare terindikasi terdampak kebakaran. Berapakah persentase lahan yang terdampak?
+•	A. 17,50 %
+•	B. 52,50 %
+•	C. 35,00 %
+•	D. 45,00 %
+Jawaban: C. 35,00 % — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30%
+•	Waspada: lebih dari 10% sampai dengan 30%
+•	Aman: 10% atau kurang
+Pembahasan: Persentase = (luas terdampak ÷ luas total) × 100% = (9.8 ÷ 28) × 100% = 35.0%. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30%.
+Kaitan unsur C, H, dan O: Data persentase membantu petugas memperkirakan bagian lahan yang terdampak. Pembakaran bahan organik melepaskan karbon (C), sedangkan kandungan air yang mengandung hidrogen (H) dan oksigen (O) berkurang saat lahan mengering.
+MATEMATIKA 2 – Kecepatan rata-rata penyebaran asap
+Asap terpantau menyebar sejauh 2.2 km dalam waktu 11 menit. Jika kecepatannya tetap, berapakah kecepatan rata-rata asap dalam km/jam?
+•	A. 6,00 km/jam
+•	B. 18,00 km/jam
+•	C. 12,00 km/jam
+•	D. 13,00 km/jam
+Jawaban: C. 12,00 km/jam — Waspada
+Acuan:
+•	Bahaya: lebih dari 15 km/jam
+•	Waspada: 5–15 km/jam
+•	Aman: kurang dari 5 km/jam
+Pembahasan: Waktu = 11/60 jam. Kecepatan = jarak ÷ waktu = 2.2 ÷ (11/60) = 12.0 km/jam. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 5–15 km/jam.
+Kaitan unsur C, H, dan O: Perhitungan kecepatan membantu memperkirakan seberapa cepat asap dapat mencapai permukiman. Asap hasil pembakaran dapat membawa partikel karbon (C) dan uap air yang tersusun dari hidrogen (H) serta oksigen (O).
+MATEMATIKA 3 – Volume persediaan air
+Terdapat 5 tangki air dengan kapasitas masing-masing 850 liter. Berapakah seluruh persediaan air yang tersedia untuk penanganan awal?
+•	A. 2125 liter
+•	B. 6375 liter
+•	C. 4250 liter
+•	D. 4260 liter
+Jawaban: C. 4250 liter — Aman
+Acuan:
+•	Bahaya: kurang dari 2.000 liter
+•	Waspada: 2.000–3.999 liter
+•	Aman: 4.000 liter atau lebih
+Pembahasan: Volume total = jumlah tangki × kapasitas tiap tangki = 5 × 850 = 4250 liter. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 4.000 liter atau lebih.
+Kaitan unsur C, H, dan O: Air (H₂O) mengandung hidrogen (H) dan oksigen (O) serta digunakan untuk membantu pendinginan dan pemadaman. Ketersediaan air penting untuk menghambat pembakaran bahan organik yang mengandung karbon (C).
+FISIKA 1 – Energi listrik alat pemantau
+Alat pemantau kualitas udara memiliki daya 14 watt dan digunakan selama 5 jam setiap hari. Berapakah energi listrik yang digunakan selama 5 hari?
+•	A. 35 Wh
+•	B. 105 Wh
+•	C. 70 Wh
+•	D. 80 Wh
+Jawaban: C. 70 Wh — Aman
+Acuan:
+•	Bahaya: lebih dari 150 Wh
+•	Waspada: lebih dari 120 sampai dengan 150 Wh
+•	Aman: 120 Wh atau kurang
+Pembahasan: Energi listrik E = P × t. E = 14 W × (5 jam/hari × 5 hari) = 70 Wh. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 120 Wh atau kurang.
+Kaitan unsur C, H, dan O: Daya listrik digunakan untuk mengoperasikan sensor yang memantau kondisi udara dan asap. Pemantauan dapat membantu mendeteksi peningkatan partikel hasil pembakaran yang mengandung karbon (C).
+FISIKA 2 – Kalor untuk menaikkan suhu air
+Dalam simulasi, 240 gram air dipanaskan sehingga suhunya naik 75°C. Jika kalor jenis air 1 kal/(g°C), berapakah kalor yang diperlukan?
+•	A. 9000 kalori
+•	B. 27000 kalori
+•	C. 18000 kalori
+•	D. 18010 kalori
+Jawaban: C. 18000 kalori — Waspada
+Acuan:
+•	Bahaya: lebih dari 30.000 kalori
+•	Waspada: lebih dari 10.000 sampai dengan 30.000 kalori
+•	Aman: 10.000 kalori atau kurang
+Pembahasan: Kalor Q = m × c × ΔT = 240 × 1 × 75 = 18000 kalori. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena lebih dari 10.000 sampai dengan 30.000 kalori.
+Kaitan unsur C, H, dan O: Konsep kalor menjelaskan energi panas yang dapat menaikkan suhu air. Air tersusun dari hidrogen (H) dan oksigen (O); pengelolaan air dan panas menjadi bagian penting dalam memahami proses pengeringan lahan dan penanganan kebakaran.
+Titik Api 3 – Kecamatan Kuala Mandor B
+Dalam simulasi pemantauan karhutla di Kabupaten Kubu Raya, petugas mencatat kondisi pada titik api 3 – kecamatan kuala mandor b. Luas wilayah pemantauan, data penyebaran asap, dan kesiapan sarana digunakan untuk menyelesaikan soal berikut.
+MATEMATIKA 1 – Persentase lahan terdampak
+Dari luas lahan yang dipantau sebesar 35 hektare, sebanyak 14 hektare terindikasi terdampak kebakaran. Berapakah persentase lahan yang terdampak?
+•	A. 20,00 %
+•	B. 60,00 %
+•	C. 40,00 %
+•	D. 50,00 %
+Jawaban: C. 40,00 % — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30%
+•	Waspada: lebih dari 10% sampai dengan 30%
+•	Aman: 10% atau kurang
+Pembahasan: Persentase = (luas terdampak ÷ luas total) × 100% = (14 ÷ 35) × 100% = 40.0%. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30%.
+Kaitan unsur C, H, dan O: Data persentase membantu petugas memperkirakan bagian lahan yang terdampak. Pembakaran bahan organik melepaskan karbon (C), sedangkan kandungan air yang mengandung hidrogen (H) dan oksigen (O) berkurang saat lahan mengering.
+MATEMATIKA 2 – Kecepatan rata-rata penyebaran asap
+Asap terpantau menyebar sejauh 1.8 km dalam waktu 9 menit. Jika kecepatannya tetap, berapakah kecepatan rata-rata asap dalam km/jam?
+•	A. 6,00 km/jam
+•	B. 18,00 km/jam
+•	C. 12,00 km/jam
+•	D. 13,00 km/jam
+Jawaban: C. 12,00 km/jam — Waspada
+Acuan:
+•	Bahaya: lebih dari 15 km/jam
+•	Waspada: 5–15 km/jam
+•	Aman: kurang dari 5 km/jam
+Pembahasan: Waktu = 9/60 jam. Kecepatan = jarak ÷ waktu = 1.8 ÷ (9/60) = 12.0 km/jam. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 5–15 km/jam.
+Kaitan unsur C, H, dan O: Perhitungan kecepatan membantu memperkirakan seberapa cepat asap dapat mencapai permukiman. Asap hasil pembakaran dapat membawa partikel karbon (C) dan uap air yang tersusun dari hidrogen (H) serta oksigen (O).
+MATEMATIKA 3 – Volume persediaan air
+Terdapat 5 tangki air dengan kapasitas masing-masing 900 liter. Berapakah seluruh persediaan air yang tersedia untuk penanganan awal?
+•	A. 2250 liter
+•	B. 6750 liter
+•	C. 4500 liter
+•	D. 4510 liter
+Jawaban: C. 4500 liter — Aman
+Acuan:
+•	Bahaya: kurang dari 2.000 liter
+•	Waspada: 2.000–3.999 liter
+•	Aman: 4.000 liter atau lebih
+Pembahasan: Volume total = jumlah tangki × kapasitas tiap tangki = 5 × 900 = 4500 liter. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 4.000 liter atau lebih.
+Kaitan unsur C, H, dan O: Air (H₂O) mengandung hidrogen (H) dan oksigen (O) serta digunakan untuk membantu pendinginan dan pemadaman. Ketersediaan air penting untuk menghambat pembakaran bahan organik yang mengandung karbon (C).
+FISIKA 1 – Energi listrik alat pemantau
+Alat pemantau kualitas udara memiliki daya 16 watt dan digunakan selama 6 jam setiap hari. Berapakah energi listrik yang digunakan selama 6 hari?
+•	A. 48 Wh
+•	B. 144 Wh
+•	C. 96 Wh
+•	D. 106 Wh
+Jawaban: C. 96 Wh — Aman
+Acuan:
+•	Bahaya: lebih dari 150 Wh
+•	Waspada: lebih dari 120 sampai dengan 150 Wh
+•	Aman: 120 Wh atau kurang
+Pembahasan: Energi listrik E = P × t. E = 16 W × (6 jam/hari × 6 hari) = 96 Wh. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 120 Wh atau kurang.
+Kaitan unsur C, H, dan O: Daya listrik digunakan untuk mengoperasikan sensor yang memantau kondisi udara dan asap. Pemantauan dapat membantu mendeteksi peningkatan partikel hasil pembakaran yang mengandung karbon (C).
+FISIKA 2 – Kalor untuk menaikkan suhu air
+Dalam simulasi, 260 gram air dipanaskan sehingga suhunya naik 80°C. Jika kalor jenis air 1 kal/(g°C), berapakah kalor yang diperlukan?
+•	A. 10400 kalori
+•	B. 31200 kalori
+•	C. 20800 kalori
+•	D. 20810 kalori
+Jawaban: C. 20800 kalori — Waspada
+Acuan:
+•	Bahaya: lebih dari 30.000 kalori
+•	Waspada: lebih dari 10.000 sampai dengan 30.000 kalori
+•	Aman: 10.000 kalori atau kurang
+Pembahasan: Kalor Q = m × c × ΔT = 260 × 1 × 80 = 20800 kalori. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena lebih dari 10.000 sampai dengan 30.000 kalori.
+Kaitan unsur C, H, dan O: Konsep kalor menjelaskan energi panas yang dapat menaikkan suhu air. Air tersusun dari hidrogen (H) dan oksigen (O); pengelolaan air dan panas menjadi bagian penting dalam memahami proses pengeringan lahan dan penanganan kebakaran.
+Titik Api 4 – Kecamatan Sungai Kakap
+Dalam simulasi pemantauan karhutla di Kabupaten Kubu Raya, petugas mencatat kondisi pada titik api 4 – kecamatan sungai kakap. Luas wilayah pemantauan, data penyebaran asap, dan kesiapan sarana digunakan untuk menyelesaikan soal berikut.
+MATEMATIKA 1 – Persentase lahan terdampak
+Dari luas lahan yang dipantau sebesar 24 hektare, sebanyak 8.4 hektare terindikasi terdampak kebakaran. Berapakah persentase lahan yang terdampak?
+•	A. 17,50 %
+•	B. 52,50 %
+•	C. 35,00 %
+•	D. 45,00 %
+Jawaban: C. 35,00 % — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30%
+•	Waspada: lebih dari 10% sampai dengan 30%
+•	Aman: 10% atau kurang
+Pembahasan: Persentase = (luas terdampak ÷ luas total) × 100% = (8.4 ÷ 24) × 100% = 35.0%. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30%.
+Kaitan unsur C, H, dan O: Data persentase membantu petugas memperkirakan bagian lahan yang terdampak. Pembakaran bahan organik melepaskan karbon (C), sedangkan kandungan air yang mengandung hidrogen (H) dan oksigen (O) berkurang saat lahan mengering.
+MATEMATIKA 2 – Kecepatan rata-rata penyebaran asap
+Asap terpantau menyebar sejauh 2.5 km dalam waktu 10 menit. Jika kecepatannya tetap, berapakah kecepatan rata-rata asap dalam km/jam?
+•	A. 7,50 km/jam
+•	B. 22,50 km/jam
+•	C. 15,00 km/jam
+•	D. 16,00 km/jam
+Jawaban: C. 15,00 km/jam — Waspada
+Acuan:
+•	Bahaya: lebih dari 15 km/jam
+•	Waspada: 5–15 km/jam
+•	Aman: kurang dari 5 km/jam
+Pembahasan: Waktu = 10/60 jam. Kecepatan = jarak ÷ waktu = 2.5 ÷ (10/60) = 15.0 km/jam. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 5–15 km/jam.
+Kaitan unsur C, H, dan O: Perhitungan kecepatan membantu memperkirakan seberapa cepat asap dapat mencapai permukiman. Asap hasil pembakaran dapat membawa partikel karbon (C) dan uap air yang tersusun dari hidrogen (H) serta oksigen (O).
+MATEMATIKA 3 – Volume persediaan air
+Terdapat 5 tangki air dengan kapasitas masing-masing 800 liter. Berapakah seluruh persediaan air yang tersedia untuk penanganan awal?
+•	A. 2000 liter
+•	B. 6000 liter
+•	C. 4000 liter
+•	D. 4010 liter
+Jawaban: C. 4000 liter — Aman
+Acuan:
+•	Bahaya: kurang dari 2.000 liter
+•	Waspada: 2.000–3.999 liter
+•	Aman: 4.000 liter atau lebih
+Pembahasan: Volume total = jumlah tangki × kapasitas tiap tangki = 5 × 800 = 4000 liter. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 4.000 liter atau lebih.
+Kaitan unsur C, H, dan O: Air (H₂O) mengandung hidrogen (H) dan oksigen (O) serta digunakan untuk membantu pendinginan dan pemadaman. Ketersediaan air penting untuk menghambat pembakaran bahan organik yang mengandung karbon (C).
+FISIKA 1 – Energi listrik alat pemantau
+Alat pemantau kualitas udara memiliki daya 18 watt dan digunakan selama 5 jam setiap hari. Berapakah energi listrik yang digunakan selama 5 hari?
+•	A. 45 Wh
+•	B. 135 Wh
+•	C. 90 Wh
+•	D. 100 Wh
+Jawaban: C. 90 Wh — Aman
+Acuan:
+•	Bahaya: lebih dari 150 Wh
+•	Waspada: lebih dari 120 sampai dengan 150 Wh
+•	Aman: 120 Wh atau kurang
+Pembahasan: Energi listrik E = P × t. E = 18 W × (5 jam/hari × 5 hari) = 90 Wh. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 120 Wh atau kurang.
+Kaitan unsur C, H, dan O: Daya listrik digunakan untuk mengoperasikan sensor yang memantau kondisi udara dan asap. Pemantauan dapat membantu mendeteksi peningkatan partikel hasil pembakaran yang mengandung karbon (C).
+FISIKA 2 – Kalor untuk menaikkan suhu air
+Dalam simulasi, 280 gram air dipanaskan sehingga suhunya naik 85°C. Jika kalor jenis air 1 kal/(g°C), berapakah kalor yang diperlukan?
+•	A. 11900 kalori
+•	B. 35700 kalori
+•	C. 23800 kalori
+•	D. 23810 kalori
+Jawaban: C. 23800 kalori — Waspada
+Acuan:
+•	Bahaya: lebih dari 30.000 kalori
+•	Waspada: lebih dari 10.000 sampai dengan 30.000 kalori
+•	Aman: 10.000 kalori atau kurang
+Pembahasan: Kalor Q = m × c × ΔT = 280 × 1 × 85 = 23800 kalori. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena lebih dari 10.000 sampai dengan 30.000 kalori.
+Kaitan unsur C, H, dan O: Konsep kalor menjelaskan energi panas yang dapat menaikkan suhu air. Air tersusun dari hidrogen (H) dan oksigen (O); pengelolaan air dan panas menjadi bagian penting dalam memahami proses pengeringan lahan dan penanganan kebakaran.
+Titik Api 5 – Kecamatan Teluk Pakedai
+Dalam simulasi pemantauan karhutla di Kabupaten Kubu Raya, petugas mencatat kondisi pada titik api 5 – kecamatan teluk pakedai. Luas wilayah pemantauan, data penyebaran asap, dan kesiapan sarana digunakan untuk menyelesaikan soal berikut.
+MATEMATIKA 1 – Persentase lahan terdampak
+Dari luas lahan yang dipantau sebesar 32 hektare, sebanyak 11.2 hektare terindikasi terdampak kebakaran. Berapakah persentase lahan yang terdampak?
+•	A. 17,50 %
+•	B. 52,50 %
+•	C. 35,00 %
+•	D. 45,00 %
+Jawaban: C. 35,00 % — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30%
+•	Waspada: lebih dari 10% sampai dengan 30%
+•	Aman: 10% atau kurang
+Pembahasan: Persentase = (luas terdampak ÷ luas total) × 100% = (11.2 ÷ 32) × 100% = 35.0%. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30%.
+Kaitan unsur C, H, dan O: Data persentase membantu petugas memperkirakan bagian lahan yang terdampak. Pembakaran bahan organik melepaskan karbon (C), sedangkan kandungan air yang mengandung hidrogen (H) dan oksigen (O) berkurang saat lahan mengering.
+MATEMATIKA 2 – Kecepatan rata-rata penyebaran asap
+Asap terpantau menyebar sejauh 2 km dalam waktu 12 menit. Jika kecepatannya tetap, berapakah kecepatan rata-rata asap dalam km/jam?
+•	A. 5,00 km/jam
+•	B. 15,00 km/jam
+•	C. 10,00 km/jam
+•	D. 11,00 km/jam
+Jawaban: C. 10,00 km/jam — Waspada
+Acuan:
+•	Bahaya: lebih dari 15 km/jam
+•	Waspada: 5–15 km/jam
+•	Aman: kurang dari 5 km/jam
+Pembahasan: Waktu = 12/60 jam. Kecepatan = jarak ÷ waktu = 2 ÷ (12/60) = 10.0 km/jam. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 5–15 km/jam.
+Kaitan unsur C, H, dan O: Perhitungan kecepatan membantu memperkirakan seberapa cepat asap dapat mencapai permukiman. Asap hasil pembakaran dapat membawa partikel karbon (C) dan uap air yang tersusun dari hidrogen (H) serta oksigen (O).
+MATEMATIKA 3 – Volume persediaan air
+Terdapat 5 tangki air dengan kapasitas masing-masing 950 liter. Berapakah seluruh persediaan air yang tersedia untuk penanganan awal?
+•	A. 2375 liter
+•	B. 7125 liter
+•	C. 4750 liter
+•	D. 4760 liter
+Jawaban: C. 4750 liter — Aman
+Acuan:
+•	Bahaya: kurang dari 2.000 liter
+•	Waspada: 2.000–3.999 liter
+•	Aman: 4.000 liter atau lebih
+Pembahasan: Volume total = jumlah tangki × kapasitas tiap tangki = 5 × 950 = 4750 liter. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 4.000 liter atau lebih.
+Kaitan unsur C, H, dan O: Air (H₂O) mengandung hidrogen (H) dan oksigen (O) serta digunakan untuk membantu pendinginan dan pemadaman. Ketersediaan air penting untuk menghambat pembakaran bahan organik yang mengandung karbon (C).
+FISIKA 1 – Energi listrik alat pemantau
+Alat pemantau kualitas udara memiliki daya 20 watt dan digunakan selama 4 jam setiap hari. Berapakah energi listrik yang digunakan selama 4 hari?
+•	A. 40 Wh
+•	B. 120 Wh
+•	C. 80 Wh
+•	D. 90 Wh
+Jawaban: C. 80 Wh — Aman
+Acuan:
+•	Bahaya: lebih dari 150 Wh
+•	Waspada: lebih dari 120 sampai dengan 150 Wh
+•	Aman: 120 Wh atau kurang
+Pembahasan: Energi listrik E = P × t. E = 20 W × (4 jam/hari × 4 hari) = 80 Wh. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 120 Wh atau kurang.
+Kaitan unsur C, H, dan O: Daya listrik digunakan untuk mengoperasikan sensor yang memantau kondisi udara dan asap. Pemantauan dapat membantu mendeteksi peningkatan partikel hasil pembakaran yang mengandung karbon (C).
+FISIKA 2 – Kalor untuk menaikkan suhu air
+Dalam simulasi, 300 gram air dipanaskan sehingga suhunya naik 90°C. Jika kalor jenis air 1 kal/(g°C), berapakah kalor yang diperlukan?
+•	A. 13500 kalori
+•	B. 40500 kalori
+•	C. 27000 kalori
+•	D. 27010 kalori
+Jawaban: C. 27000 kalori — Waspada
+Acuan:
+•	Bahaya: lebih dari 30.000 kalori
+•	Waspada: lebih dari 10.000 sampai dengan 30.000 kalori
+•	Aman: 10.000 kalori atau kurang
+Pembahasan: Kalor Q = m × c × ΔT = 300 × 1 × 90 = 27000 kalori. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena lebih dari 10.000 sampai dengan 30.000 kalori.
+Kaitan unsur C, H, dan O: Konsep kalor menjelaskan energi panas yang dapat menaikkan suhu air. Air tersusun dari hidrogen (H) dan oksigen (O); pengelolaan air dan panas menjadi bagian penting dalam memahami proses pengeringan lahan dan penanganan kebakaran.
+ 
+KOTA PONTIANAK
+Setiap titik api berisi lima soal: tiga matematika dan dua fisika.
+Titik Api 1 – Kecamatan Pontianak Selatan
+Dalam simulasi pemantauan karhutla di Kota Pontianak, petugas mencatat kondisi pada titik api 1 – kecamatan pontianak selatan. Luas wilayah pemantauan, data penyebaran asap, dan kesiapan sarana digunakan untuk menyelesaikan soal berikut.
+MATEMATIKA 1 – Persentase lahan terdampak
+Dari luas lahan yang dipantau sebesar 14 hektare, sebanyak 4.2 hektare terindikasi terdampak kebakaran. Berapakah persentase lahan yang terdampak?
+•	A. 15,00 %
+•	B. 45,00 %
+•	C. 30,00 %
+•	D. 40,00 %
+Jawaban: C. 30,00 % — Waspada
+Acuan:
+•	Bahaya: lebih dari 30%
+•	Waspada: lebih dari 10% sampai dengan 30%
+•	Aman: 10% atau kurang
+Pembahasan: Persentase = (luas terdampak ÷ luas total) × 100% = (4.2 ÷ 14) × 100% = 30.0%. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena lebih dari 10% sampai dengan 30%.
+Kaitan unsur C, H, dan O: Data persentase membantu petugas memperkirakan bagian lahan yang terdampak. Pembakaran bahan organik melepaskan karbon (C), sedangkan kandungan air yang mengandung hidrogen (H) dan oksigen (O) berkurang saat lahan mengering.
+MATEMATIKA 2 – Kecepatan rata-rata penyebaran asap
+Asap terpantau menyebar sejauh 3 km dalam waktu 12 menit. Jika kecepatannya tetap, berapakah kecepatan rata-rata asap dalam km/jam?
+•	A. 7,50 km/jam
+•	B. 22,50 km/jam
+•	C. 15,00 km/jam
+•	D. 16,00 km/jam
+Jawaban: C. 15,00 km/jam — Waspada
+Acuan:
+•	Bahaya: lebih dari 15 km/jam
+•	Waspada: 5–15 km/jam
+•	Aman: kurang dari 5 km/jam
+Pembahasan: Waktu = 12/60 jam. Kecepatan = jarak ÷ waktu = 3 ÷ (12/60) = 15.0 km/jam. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 5–15 km/jam.
+Kaitan unsur C, H, dan O: Perhitungan kecepatan membantu memperkirakan seberapa cepat asap dapat mencapai permukiman. Asap hasil pembakaran dapat membawa partikel karbon (C) dan uap air yang tersusun dari hidrogen (H) serta oksigen (O).
+MATEMATIKA 3 – Volume persediaan air
+Terdapat 5 tangki air dengan kapasitas masing-masing 700 liter. Berapakah seluruh persediaan air yang tersedia untuk penanganan awal?
+•	A. 1750 liter
+•	B. 5250 liter
+•	C. 3500 liter
+•	D. 3510 liter
+Jawaban: C. 3500 liter — Waspada
+Acuan:
+•	Bahaya: kurang dari 2.000 liter
+•	Waspada: 2.000–3.999 liter
+•	Aman: 4.000 liter atau lebih
+Pembahasan: Volume total = jumlah tangki × kapasitas tiap tangki = 5 × 700 = 3500 liter. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 2.000–3.999 liter.
+Kaitan unsur C, H, dan O: Air (H₂O) mengandung hidrogen (H) dan oksigen (O) serta digunakan untuk membantu pendinginan dan pemadaman. Ketersediaan air penting untuk menghambat pembakaran bahan organik yang mengandung karbon (C).
+FISIKA 1 – Energi listrik alat pemantau
+Alat pemantau kualitas udara memiliki daya 12 watt dan digunakan selama 3 jam setiap hari. Berapakah energi listrik yang digunakan selama 3 hari?
+•	A. 18 Wh
+•	B. 54 Wh
+•	C. 36 Wh
+•	D. 46 Wh
+Jawaban: C. 36 Wh — Aman
+Acuan:
+•	Bahaya: lebih dari 150 Wh
+•	Waspada: lebih dari 120 sampai dengan 150 Wh
+•	Aman: 120 Wh atau kurang
+Pembahasan: Energi listrik E = P × t. E = 12 W × (3 jam/hari × 3 hari) = 36 Wh. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 120 Wh atau kurang.
+Kaitan unsur C, H, dan O: Daya listrik digunakan untuk mengoperasikan sensor yang memantau kondisi udara dan asap. Pemantauan dapat membantu mendeteksi peningkatan partikel hasil pembakaran yang mengandung karbon (C).
+FISIKA 2 – Kalor untuk menaikkan suhu air
+Dalam simulasi, 320 gram air dipanaskan sehingga suhunya naik 95°C. Jika kalor jenis air 1 kal/(g°C), berapakah kalor yang diperlukan?
+•	A. 15200 kalori
+•	B. 45600 kalori
+•	C. 30400 kalori
+•	D. 30410 kalori
+Jawaban: C. 30400 kalori — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30.000 kalori
+•	Waspada: lebih dari 10.000 sampai dengan 30.000 kalori
+•	Aman: 10.000 kalori atau kurang
+Pembahasan: Kalor Q = m × c × ΔT = 320 × 1 × 95 = 30400 kalori. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30.000 kalori.
+Kaitan unsur C, H, dan O: Konsep kalor menjelaskan energi panas yang dapat menaikkan suhu air. Air tersusun dari hidrogen (H) dan oksigen (O); pengelolaan air dan panas menjadi bagian penting dalam memahami proses pengeringan lahan dan penanganan kebakaran.
+Titik Api 2 – Kecamatan Pontianak Tenggara
+Dalam simulasi pemantauan karhutla di Kota Pontianak, petugas mencatat kondisi pada titik api 2 – kecamatan pontianak tenggara. Luas wilayah pemantauan, data penyebaran asap, dan kesiapan sarana digunakan untuk menyelesaikan soal berikut.
+MATEMATIKA 1 – Persentase lahan terdampak
+Dari luas lahan yang dipantau sebesar 17 hektare, sebanyak 5.95 hektare terindikasi terdampak kebakaran. Berapakah persentase lahan yang terdampak?
+•	A. 17,50 %
+•	B. 52,50 %
+•	C. 35,00 %
+•	D. 45,00 %
+Jawaban: C. 35,00 % — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30%
+•	Waspada: lebih dari 10% sampai dengan 30%
+•	Aman: 10% atau kurang
+Pembahasan: Persentase = (luas terdampak ÷ luas total) × 100% = (5.95 ÷ 17) × 100% = 35.0%. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30%.
+Kaitan unsur C, H, dan O: Data persentase membantu petugas memperkirakan bagian lahan yang terdampak. Pembakaran bahan organik melepaskan karbon (C), sedangkan kandungan air yang mengandung hidrogen (H) dan oksigen (O) berkurang saat lahan mengering.
+MATEMATIKA 2 – Kecepatan rata-rata penyebaran asap
+Asap terpantau menyebar sejauh 2.4 km dalam waktu 10 menit. Jika kecepatannya tetap, berapakah kecepatan rata-rata asap dalam km/jam?
+•	A. 7,20 km/jam
+•	B. 21,60 km/jam
+•	C. 14,40 km/jam
+•	D. 15,40 km/jam
+Jawaban: C. 14,40 km/jam — Waspada
+Acuan:
+•	Bahaya: lebih dari 15 km/jam
+•	Waspada: 5–15 km/jam
+•	Aman: kurang dari 5 km/jam
+Pembahasan: Waktu = 10/60 jam. Kecepatan = jarak ÷ waktu = 2.4 ÷ (10/60) = 14.4 km/jam. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 5–15 km/jam.
+Kaitan unsur C, H, dan O: Perhitungan kecepatan membantu memperkirakan seberapa cepat asap dapat mencapai permukiman. Asap hasil pembakaran dapat membawa partikel karbon (C) dan uap air yang tersusun dari hidrogen (H) serta oksigen (O).
+MATEMATIKA 3 – Volume persediaan air
+Terdapat 5 tangki air dengan kapasitas masing-masing 800 liter. Berapakah seluruh persediaan air yang tersedia untuk penanganan awal?
+•	A. 2000 liter
+•	B. 6000 liter
+•	C. 4000 liter
+•	D. 4010 liter
+Jawaban: C. 4000 liter — Aman
+Acuan:
+•	Bahaya: kurang dari 2.000 liter
+•	Waspada: 2.000–3.999 liter
+•	Aman: 4.000 liter atau lebih
+Pembahasan: Volume total = jumlah tangki × kapasitas tiap tangki = 5 × 800 = 4000 liter. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 4.000 liter atau lebih.
+Kaitan unsur C, H, dan O: Air (H₂O) mengandung hidrogen (H) dan oksigen (O) serta digunakan untuk membantu pendinginan dan pemadaman. Ketersediaan air penting untuk menghambat pembakaran bahan organik yang mengandung karbon (C).
+FISIKA 1 – Energi listrik alat pemantau
+Alat pemantau kualitas udara memiliki daya 14 watt dan digunakan selama 4 jam setiap hari. Berapakah energi listrik yang digunakan selama 4 hari?
+•	A. 28 Wh
+•	B. 84 Wh
+•	C. 56 Wh
+•	D. 66 Wh
+Jawaban: C. 56 Wh — Aman
+Acuan:
+•	Bahaya: lebih dari 150 Wh
+•	Waspada: lebih dari 120 sampai dengan 150 Wh
+•	Aman: 120 Wh atau kurang
+Pembahasan: Energi listrik E = P × t. E = 14 W × (4 jam/hari × 4 hari) = 56 Wh. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 120 Wh atau kurang.
+Kaitan unsur C, H, dan O: Daya listrik digunakan untuk mengoperasikan sensor yang memantau kondisi udara dan asap. Pemantauan dapat membantu mendeteksi peningkatan partikel hasil pembakaran yang mengandung karbon (C).
+FISIKA 2 – Kalor untuk menaikkan suhu air
+Dalam simulasi, 340 gram air dipanaskan sehingga suhunya naik 100°C. Jika kalor jenis air 1 kal/(g°C), berapakah kalor yang diperlukan?
+•	A. 17000 kalori
+•	B. 51000 kalori
+•	C. 34000 kalori
+•	D. 34010 kalori
+Jawaban: C. 34000 kalori — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30.000 kalori
+•	Waspada: lebih dari 10.000 sampai dengan 30.000 kalori
+•	Aman: 10.000 kalori atau kurang
+Pembahasan: Kalor Q = m × c × ΔT = 340 × 1 × 100 = 34000 kalori. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30.000 kalori.
+Kaitan unsur C, H, dan O: Konsep kalor menjelaskan energi panas yang dapat menaikkan suhu air. Air tersusun dari hidrogen (H) dan oksigen (O); pengelolaan air dan panas menjadi bagian penting dalam memahami proses pengeringan lahan dan penanganan kebakaran.
+Titik Api 3 – Kecamatan Pontianak Timur
+Dalam simulasi pemantauan karhutla di Kota Pontianak, petugas mencatat kondisi pada titik api 3 – kecamatan pontianak timur. Luas wilayah pemantauan, data penyebaran asap, dan kesiapan sarana digunakan untuk menyelesaikan soal berikut.
+MATEMATIKA 1 – Persentase lahan terdampak
+Dari luas lahan yang dipantau sebesar 21 hektare, sebanyak 7.35 hektare terindikasi terdampak kebakaran. Berapakah persentase lahan yang terdampak?
+•	A. 17,50 %
+•	B. 52,50 %
+•	C. 35,00 %
+•	D. 45,00 %
+Jawaban: C. 35,00 % — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30%
+•	Waspada: lebih dari 10% sampai dengan 30%
+•	Aman: 10% atau kurang
+Pembahasan: Persentase = (luas terdampak ÷ luas total) × 100% = (7.35 ÷ 21) × 100% = 35.0%. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30%.
+Kaitan unsur C, H, dan O: Data persentase membantu petugas memperkirakan bagian lahan yang terdampak. Pembakaran bahan organik melepaskan karbon (C), sedangkan kandungan air yang mengandung hidrogen (H) dan oksigen (O) berkurang saat lahan mengering.
+MATEMATIKA 2 – Kecepatan rata-rata penyebaran asap
+Asap terpantau menyebar sejauh 2.8 km dalam waktu 14 menit. Jika kecepatannya tetap, berapakah kecepatan rata-rata asap dalam km/jam?
+•	A. 6,00 km/jam
+•	B. 18,00 km/jam
+•	C. 12,00 km/jam
+•	D. 13,00 km/jam
+Jawaban: C. 12,00 km/jam — Waspada
+Acuan:
+•	Bahaya: lebih dari 15 km/jam
+•	Waspada: 5–15 km/jam
+•	Aman: kurang dari 5 km/jam
+Pembahasan: Waktu = 14/60 jam. Kecepatan = jarak ÷ waktu = 2.8 ÷ (14/60) = 12.0 km/jam. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 5–15 km/jam.
+Kaitan unsur C, H, dan O: Perhitungan kecepatan membantu memperkirakan seberapa cepat asap dapat mencapai permukiman. Asap hasil pembakaran dapat membawa partikel karbon (C) dan uap air yang tersusun dari hidrogen (H) serta oksigen (O).
+MATEMATIKA 3 – Volume persediaan air
+Terdapat 5 tangki air dengan kapasitas masing-masing 750 liter. Berapakah seluruh persediaan air yang tersedia untuk penanganan awal?
+•	A. 1875 liter
+•	B. 5625 liter
+•	C. 3750 liter
+•	D. 3760 liter
+Jawaban: C. 3750 liter — Waspada
+Acuan:
+•	Bahaya: kurang dari 2.000 liter
+•	Waspada: 2.000–3.999 liter
+•	Aman: 4.000 liter atau lebih
+Pembahasan: Volume total = jumlah tangki × kapasitas tiap tangki = 5 × 750 = 3750 liter. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 2.000–3.999 liter.
+Kaitan unsur C, H, dan O: Air (H₂O) mengandung hidrogen (H) dan oksigen (O) serta digunakan untuk membantu pendinginan dan pemadaman. Ketersediaan air penting untuk menghambat pembakaran bahan organik yang mengandung karbon (C).
+FISIKA 1 – Energi listrik alat pemantau
+Alat pemantau kualitas udara memiliki daya 16 watt dan digunakan selama 5 jam setiap hari. Berapakah energi listrik yang digunakan selama 5 hari?
+•	A. 40 Wh
+•	B. 120 Wh
+•	C. 80 Wh
+•	D. 90 Wh
+Jawaban: C. 80 Wh — Aman
+Acuan:
+•	Bahaya: lebih dari 150 Wh
+•	Waspada: lebih dari 120 sampai dengan 150 Wh
+•	Aman: 120 Wh atau kurang
+Pembahasan: Energi listrik E = P × t. E = 16 W × (5 jam/hari × 5 hari) = 80 Wh. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 120 Wh atau kurang.
+Kaitan unsur C, H, dan O: Daya listrik digunakan untuk mengoperasikan sensor yang memantau kondisi udara dan asap. Pemantauan dapat membantu mendeteksi peningkatan partikel hasil pembakaran yang mengandung karbon (C).
+FISIKA 2 – Kalor untuk menaikkan suhu air
+Dalam simulasi, 360 gram air dipanaskan sehingga suhunya naik 105°C. Jika kalor jenis air 1 kal/(g°C), berapakah kalor yang diperlukan?
+•	A. 18900 kalori
+•	B. 56700 kalori
+•	C. 37800 kalori
+•	D. 37810 kalori
+Jawaban: C. 37800 kalori — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30.000 kalori
+•	Waspada: lebih dari 10.000 sampai dengan 30.000 kalori
+•	Aman: 10.000 kalori atau kurang
+Pembahasan: Kalor Q = m × c × ΔT = 360 × 1 × 105 = 37800 kalori. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30.000 kalori.
+Kaitan unsur C, H, dan O: Konsep kalor menjelaskan energi panas yang dapat menaikkan suhu air. Air tersusun dari hidrogen (H) dan oksigen (O); pengelolaan air dan panas menjadi bagian penting dalam memahami proses pengeringan lahan dan penanganan kebakaran.
+Titik Api 4 – Kecamatan Pontianak Barat
+Dalam simulasi pemantauan karhutla di Kota Pontianak, petugas mencatat kondisi pada titik api 4 – kecamatan pontianak barat. Luas wilayah pemantauan, data penyebaran asap, dan kesiapan sarana digunakan untuk menyelesaikan soal berikut.
+MATEMATIKA 1 – Persentase lahan terdampak
+Dari luas lahan yang dipantau sebesar 19 hektare, sebanyak 6.65 hektare terindikasi terdampak kebakaran. Berapakah persentase lahan yang terdampak?
+•	A. 17,50 %
+•	B. 52,50 %
+•	C. 35,00 %
+•	D. 45,00 %
+Jawaban: C. 35,00 % — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30%
+•	Waspada: lebih dari 10% sampai dengan 30%
+•	Aman: 10% atau kurang
+Pembahasan: Persentase = (luas terdampak ÷ luas total) × 100% = (6.65 ÷ 19) × 100% = 35.0%. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30%.
+Kaitan unsur C, H, dan O: Data persentase membantu petugas memperkirakan bagian lahan yang terdampak. Pembakaran bahan organik melepaskan karbon (C), sedangkan kandungan air yang mengandung hidrogen (H) dan oksigen (O) berkurang saat lahan mengering.
+MATEMATIKA 2 – Kecepatan rata-rata penyebaran asap
+Asap terpantau menyebar sejauh 3.2 km dalam waktu 16 menit. Jika kecepatannya tetap, berapakah kecepatan rata-rata asap dalam km/jam?
+•	A. 6,00 km/jam
+•	B. 18,00 km/jam
+•	C. 12,00 km/jam
+•	D. 13,00 km/jam
+Jawaban: C. 12,00 km/jam — Waspada
+Acuan:
+•	Bahaya: lebih dari 15 km/jam
+•	Waspada: 5–15 km/jam
+•	Aman: kurang dari 5 km/jam
+Pembahasan: Waktu = 16/60 jam. Kecepatan = jarak ÷ waktu = 3.2 ÷ (16/60) = 12.0 km/jam. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 5–15 km/jam.
+Kaitan unsur C, H, dan O: Perhitungan kecepatan membantu memperkirakan seberapa cepat asap dapat mencapai permukiman. Asap hasil pembakaran dapat membawa partikel karbon (C) dan uap air yang tersusun dari hidrogen (H) serta oksigen (O).
+MATEMATIKA 3 – Volume persediaan air
+Terdapat 5 tangki air dengan kapasitas masing-masing 900 liter. Berapakah seluruh persediaan air yang tersedia untuk penanganan awal?
+•	A. 2250 liter
+•	B. 6750 liter
+•	C. 4500 liter
+•	D. 4510 liter
+Jawaban: C. 4500 liter — Aman
+Acuan:
+•	Bahaya: kurang dari 2.000 liter
+•	Waspada: 2.000–3.999 liter
+•	Aman: 4.000 liter atau lebih
+Pembahasan: Volume total = jumlah tangki × kapasitas tiap tangki = 5 × 900 = 4500 liter. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 4.000 liter atau lebih.
+Kaitan unsur C, H, dan O: Air (H₂O) mengandung hidrogen (H) dan oksigen (O) serta digunakan untuk membantu pendinginan dan pemadaman. Ketersediaan air penting untuk menghambat pembakaran bahan organik yang mengandung karbon (C).
+FISIKA 1 – Energi listrik alat pemantau
+Alat pemantau kualitas udara memiliki daya 18 watt dan digunakan selama 4 jam setiap hari. Berapakah energi listrik yang digunakan selama 4 hari?
+•	A. 36 Wh
+•	B. 108 Wh
+•	C. 72 Wh
+•	D. 82 Wh
+Jawaban: C. 72 Wh — Aman
+Acuan:
+•	Bahaya: lebih dari 150 Wh
+•	Waspada: lebih dari 120 sampai dengan 150 Wh
+•	Aman: 120 Wh atau kurang
+Pembahasan: Energi listrik E = P × t. E = 18 W × (4 jam/hari × 4 hari) = 72 Wh. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 120 Wh atau kurang.
+Kaitan unsur C, H, dan O: Daya listrik digunakan untuk mengoperasikan sensor yang memantau kondisi udara dan asap. Pemantauan dapat membantu mendeteksi peningkatan partikel hasil pembakaran yang mengandung karbon (C).
+FISIKA 2 – Kalor untuk menaikkan suhu air
+Dalam simulasi, 380 gram air dipanaskan sehingga suhunya naik 110°C. Jika kalor jenis air 1 kal/(g°C), berapakah kalor yang diperlukan?
+•	A. 20900 kalori
+•	B. 62700 kalori
+•	C. 41800 kalori
+•	D. 41810 kalori
+Jawaban: C. 41800 kalori — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30.000 kalori
+•	Waspada: lebih dari 10.000 sampai dengan 30.000 kalori
+•	Aman: 10.000 kalori atau kurang
+Pembahasan: Kalor Q = m × c × ΔT = 380 × 1 × 110 = 41800 kalori. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30.000 kalori.
+Kaitan unsur C, H, dan O: Konsep kalor menjelaskan energi panas yang dapat menaikkan suhu air. Air tersusun dari hidrogen (H) dan oksigen (O); pengelolaan air dan panas menjadi bagian penting dalam memahami proses pengeringan lahan dan penanganan kebakaran.
+Titik Api 5 – Kecamatan Pontianak Utara
+Dalam simulasi pemantauan karhutla di Kota Pontianak, petugas mencatat kondisi pada titik api 5 – kecamatan pontianak utara. Luas wilayah pemantauan, data penyebaran asap, dan kesiapan sarana digunakan untuk menyelesaikan soal berikut.
+MATEMATIKA 1 – Persentase lahan terdampak
+Dari luas lahan yang dipantau sebesar 23 hektare, sebanyak 8.05 hektare terindikasi terdampak kebakaran. Berapakah persentase lahan yang terdampak?
+•	A. 17,50 %
+•	B. 52,50 %
+•	C. 35,00 %
+•	D. 45,00 %
+Jawaban: C. 35,00 % — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30%
+•	Waspada: lebih dari 10% sampai dengan 30%
+•	Aman: 10% atau kurang
+Pembahasan: Persentase = (luas terdampak ÷ luas total) × 100% = (8.05 ÷ 23) × 100% = 35.0%. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30%.
+Kaitan unsur C, H, dan O: Data persentase membantu petugas memperkirakan bagian lahan yang terdampak. Pembakaran bahan organik melepaskan karbon (C), sedangkan kandungan air yang mengandung hidrogen (H) dan oksigen (O) berkurang saat lahan mengering.
+MATEMATIKA 2 – Kecepatan rata-rata penyebaran asap
+Asap terpantau menyebar sejauh 2.6 km dalam waktu 13 menit. Jika kecepatannya tetap, berapakah kecepatan rata-rata asap dalam km/jam?
+•	A. 6,00 km/jam
+•	B. 18,00 km/jam
+•	C. 12,00 km/jam
+•	D. 13,00 km/jam
+Jawaban: C. 12,00 km/jam — Waspada
+Acuan:
+•	Bahaya: lebih dari 15 km/jam
+•	Waspada: 5–15 km/jam
+•	Aman: kurang dari 5 km/jam
+Pembahasan: Waktu = 13/60 jam. Kecepatan = jarak ÷ waktu = 2.6 ÷ (13/60) = 12.0 km/jam. Berdasarkan acuan, nilai tersebut termasuk kategori waspada karena 5–15 km/jam.
+Kaitan unsur C, H, dan O: Perhitungan kecepatan membantu memperkirakan seberapa cepat asap dapat mencapai permukiman. Asap hasil pembakaran dapat membawa partikel karbon (C) dan uap air yang tersusun dari hidrogen (H) serta oksigen (O).
+MATEMATIKA 3 – Volume persediaan air
+Terdapat 5 tangki air dengan kapasitas masing-masing 850 liter. Berapakah seluruh persediaan air yang tersedia untuk penanganan awal?
+•	A. 2125 liter
+•	B. 6375 liter
+•	C. 4250 liter
+•	D. 4260 liter
+Jawaban: C. 4250 liter — Aman
+Acuan:
+•	Bahaya: kurang dari 2.000 liter
+•	Waspada: 2.000–3.999 liter
+•	Aman: 4.000 liter atau lebih
+Pembahasan: Volume total = jumlah tangki × kapasitas tiap tangki = 5 × 850 = 4250 liter. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 4.000 liter atau lebih.
+Kaitan unsur C, H, dan O: Air (H₂O) mengandung hidrogen (H) dan oksigen (O) serta digunakan untuk membantu pendinginan dan pemadaman. Ketersediaan air penting untuk menghambat pembakaran bahan organik yang mengandung karbon (C).
+FISIKA 1 – Energi listrik alat pemantau
+Alat pemantau kualitas udara memiliki daya 20 watt dan digunakan selama 6 jam setiap hari. Berapakah energi listrik yang digunakan selama 6 hari?
+•	A. 60 Wh
+•	B. 180 Wh
+•	C. 120 Wh
+•	D. 130 Wh
+Jawaban: C. 120 Wh — Aman
+Acuan:
+•	Bahaya: lebih dari 150 Wh
+•	Waspada: lebih dari 120 sampai dengan 150 Wh
+•	Aman: 120 Wh atau kurang
+Pembahasan: Energi listrik E = P × t. E = 20 W × (6 jam/hari × 6 hari) = 120 Wh. Berdasarkan acuan, nilai tersebut termasuk kategori aman karena 120 Wh atau kurang.
+Kaitan unsur C, H, dan O: Daya listrik digunakan untuk mengoperasikan sensor yang memantau kondisi udara dan asap. Pemantauan dapat membantu mendeteksi peningkatan partikel hasil pembakaran yang mengandung karbon (C).
+FISIKA 2 – Kalor untuk menaikkan suhu air
+Dalam simulasi, 400 gram air dipanaskan sehingga suhunya naik 115°C. Jika kalor jenis air 1 kal/(g°C), berapakah kalor yang diperlukan?
+•	A. 23000 kalori
+•	B. 69000 kalori
+•	C. 46000 kalori
+•	D. 46010 kalori
+Jawaban: C. 46000 kalori — Bahaya
+Acuan:
+•	Bahaya: lebih dari 30.000 kalori
+•	Waspada: lebih dari 10.000 sampai dengan 30.000 kalori
+•	Aman: 10.000 kalori atau kurang
+Pembahasan: Kalor Q = m × c × ΔT = 400 × 1 × 115 = 46000 kalori. Berdasarkan acuan, nilai tersebut termasuk kategori bahaya karena lebih dari 30.000 kalori.
+Kaitan unsur C, H, dan O: Konsep kalor menjelaskan energi panas yang dapat menaikkan suhu air. Air tersusun dari hidrogen (H) dan oksigen (O); pengelolaan air dan panas menjadi bagian penting dalam memahami proses pengeringan lahan dan penanganan kebakaran.
+ 
+REKAPITULASI JUMLAH SOAL
+Kota Singkawang: 5 titik api × 5 soal = 25 soal.
+Kabupaten Kubu Raya: 5 titik api × 5 soal = 25 soal.
+Kota Pontianak: 5 titik api × 5 soal = 25 soal.
+Total: 15 titik api × 5 soal = 75 soal (45 soal matematika dan 30 soal fisika).
+Catatan
+Seluruh data angka, nama titik pengamatan, dan skenario pada dokumen ini merupakan data simulasi untuk pembelajaran. Nilai kalor jenis air 0,5 kal/(g°C) digunakan sebagai asumsi dalam soal fisika agar perhitungan sesuai dengan satuan kalori. Kategori risiko dan persentase komposisi unsur bukan hasil pengukuran lapangan.

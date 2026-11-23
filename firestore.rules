@@ -1,0 +1,337 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Pillar 0: Global Default-Deny Safety Net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // --- Pillar 3: Hardened Global Primitives ---
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isEmailVerified() {
+      return isSignedIn() && request.auth.token.email_verified == true;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isShortString(val, minLen, maxLen) {
+      return val is string && val.size() >= minLen && val.size() <= maxLen;
+    }
+
+    function isScoreRange(val) {
+      return (val is int || val is float) && val >= 0 && val <= 100;
+    }
+
+    function isNonNegNumber(val, maxVal) {
+      return (val is int || val is float) && val >= 0 && val <= maxVal;
+    }
+
+    function isBoundedStringArray(arr, maxItems) {
+      return arr is list
+        && arr.size() <= maxItems
+        && (arr.size() == 0 || (arr[0] is string && arr[0].size() >= 1 && arr[0].size() <= 64));
+    }
+
+    // --- Pillar 2: Validation Blueprints ---
+    function isValidUserProfile(data, userId) {
+      return data.keys().hasAll(['uid', 'displayName', 'email', 'role', 'createdAt', 'updatedAt'])
+        && data.keys().hasOnly(['uid', 'displayName', 'certificateName', 'email', 'photoURL', 'role', 'createdAt', 'updatedAt'])
+        && data.uid == userId
+        && isValidId(data.uid)
+        && isShortString(data.displayName, 1, 120)
+        && (!('certificateName' in data) || isShortString(data.certificateName, 1, 120))
+        && isShortString(data.email, 3, 180)
+        && (!('photoURL' in data) || isShortString(data.photoURL, 0, 512))
+        && data.role == 'student'
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp;
+    }
+
+    function isValidMissionAttempt(data) {
+      return data.keys().hasAll([
+          'attemptId', 'userId', 'regionId', 'missionId',
+          'attemptType', 'compositeScore', 'completedAtIso', 'createdAt'
+        ])
+        && data.keys().hasOnly([
+          'attemptId', 'userId', 'regionId', 'missionId', 'attemptType',
+          'sessionId', 'questionCount', 'correctCount', 'accuracyScore',
+          'analysisQualityScore', 'completionTimeScore', 'elapsedSeconds',
+          'targetSeconds', 'totalWeight', 'earnedWeight', 'compositeScore',
+          'selectedActionId', 'suitabilityLabel', 'answersSummary',
+          'serverProof', 'completedAtIso', 'createdAt'
+        ])
+        && isValidId(data.attemptId)
+        && data.userId == request.auth.uid
+        && isValidId(data.userId)
+        && isValidId(data.regionId)
+        && isValidId(data.missionId)
+        && (data.attemptType == 'challenge' || data.attemptType == 'decision')
+        && (!('sessionId' in data) || isShortString(data.sessionId, 1, 128))
+        && (!('questionCount' in data) || isNonNegNumber(data.questionCount, 20))
+        && (!('correctCount' in data) || isNonNegNumber(data.correctCount, 20))
+        && (!('accuracyScore' in data) || isScoreRange(data.accuracyScore))
+        && (!('analysisQualityScore' in data) || isScoreRange(data.analysisQualityScore))
+        && (!('completionTimeScore' in data) || isScoreRange(data.completionTimeScore))
+        && (!('elapsedSeconds' in data) || isNonNegNumber(data.elapsedSeconds, 86400))
+        && (!('targetSeconds' in data) || isNonNegNumber(data.targetSeconds, 3600))
+        && (!('totalWeight' in data) || isNonNegNumber(data.totalWeight, 100))
+        && (!('earnedWeight' in data) || isNonNegNumber(data.earnedWeight, 100))
+        && isScoreRange(data.compositeScore)
+        && (!('selectedActionId' in data) || isShortString(data.selectedActionId, 1, 64))
+        && (!('suitabilityLabel' in data) || isShortString(data.suitabilityLabel, 1, 80))
+        && (!('answersSummary' in data) || (data.answersSummary is list && data.answersSummary.size() <= 10 && (data.answersSummary.size() == 0 || data.answersSummary[0] is map)))
+        && (!('serverProof' in data) || isShortString(data.serverProof, 16, 256))
+        && isShortString(data.completedAtIso, 10, 64)
+        && data.createdAt is timestamp;
+    }
+
+    function isValidSimulationResult(data) {
+      return data.keys().hasAll([
+          'resultId', 'userId', 'regionId', 'regionName', 'missionId',
+          'overallScore', 'fiveMetrics', 'isMissionCompleted', 'createdAt', 'updatedAt'
+        ])
+        && data.keys().hasOnly([
+          'resultId', 'userId', 'regionId', 'regionName', 'missionId', 'missionCode',
+          'riskScore', 'riskCategory', 'decisionActionId', 'decisionActionLabel',
+          'decisionScore', 'overallScore', 'fiveMetrics', 'stemScores',
+          'latestDecisionRecord', 'latestChallengeRecord',
+          'isMissionCompleted', 'challengeProof', 'createdAt', 'updatedAt'
+        ])
+        && isValidId(data.resultId)
+        && data.userId == request.auth.uid
+        && isValidId(data.userId)
+        && isValidId(data.regionId)
+        && isShortString(data.regionName, 2, 120)
+        && isValidId(data.missionId)
+        && (!('missionCode' in data) || isShortString(data.missionCode, 1, 32))
+        && (!('riskScore' in data) || isScoreRange(data.riskScore))
+        && (!('riskCategory' in data) || (data.riskCategory == 'rendah' || data.riskCategory == 'sedang' || data.riskCategory == 'tinggi'))
+        && (!('decisionActionId' in data) || isShortString(data.decisionActionId, 1, 64))
+        && (!('decisionActionLabel' in data) || isShortString(data.decisionActionLabel, 1, 120))
+        && (!('decisionScore' in data) || isScoreRange(data.decisionScore))
+        && isScoreRange(data.overallScore)
+        && data.fiveMetrics is map
+        && data.fiveMetrics.keys().size() <= 8
+        && (!('stemScores' in data) || (data.stemScores is map && data.stemScores.keys().size() <= 6))
+        && (!('latestDecisionRecord' in data) || (data.latestDecisionRecord is map && data.latestDecisionRecord.keys().size() <= 30))
+        && (!('latestChallengeRecord' in data) || (data.latestChallengeRecord is map && data.latestChallengeRecord.keys().size() <= 24))
+        && data.isMissionCompleted is bool
+        && (!('challengeProof' in data) || isShortString(data.challengeProof, 16, 256))
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp;
+    }
+
+    function isValidPlayerProgress(data, userId) {
+      return data.keys().hasAll([
+          'userId', 'completedMissionIds', 'inProgressMissionIds',
+          'totalCompletedMissions', 'averageOverallScore', 'createdAt', 'updatedAt'
+        ])
+        && data.keys().hasOnly([
+          'userId', 'activeRegionId', 'activeMissionId',
+          'completedMissionIds', 'inProgressMissionIds',
+          'totalCompletedMissions', 'averageOverallScore',
+          'certificateId', 'createdAt', 'updatedAt'
+        ])
+        && data.userId == userId
+        && isValidId(data.userId)
+        && (!('activeRegionId' in data) || isValidId(data.activeRegionId))
+        && (!('activeMissionId' in data) || isValidId(data.activeMissionId))
+        && isBoundedStringArray(data.completedMissionIds, 30)
+        && isBoundedStringArray(data.inProgressMissionIds, 30)
+        && isNonNegNumber(data.totalCompletedMissions, 30)
+        && data.totalCompletedMissions == data.completedMissionIds.size()
+        && isScoreRange(data.averageOverallScore)
+        && (!('certificateId' in data) || isValidId(data.certificateId))
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp;
+    }
+
+    function isValidCertificate(data) {
+      return data.keys().hasAll([
+          'certificateId', 'userId', 'studentName', 'studentEmail',
+          'certificateNumber', 'completedMissionIds', 'totalRequiredMissions',
+          'averageScore', 'predicate', 'issuedAtIso', 'validationDigest',
+          'serverVerified', 'createdAt'
+        ])
+        && data.keys().hasOnly([
+          'certificateId', 'userId', 'studentName', 'studentEmail',
+          'certificateNumber', 'completedMissionIds', 'totalRequiredMissions',
+          'averageScore', 'predicate', 'issuedAtIso', 'validationDigest',
+          'serverVerified', 'createdAt'
+        ])
+        && isValidId(data.certificateId)
+        && data.userId == request.auth.uid
+        && isValidId(data.userId)
+        && isShortString(data.studentName, 1, 120)
+        && isShortString(data.studentEmail, 3, 180)
+        && data.certificateNumber is string
+        && data.certificateNumber.size() >= 10
+        && data.certificateNumber.size() <= 64
+        && data.certificateNumber.matches('^SKH-[0-9]{4}-[A-Z0-9]{6,12}$')
+        && isBoundedStringArray(data.completedMissionIds, 14)
+        && data.completedMissionIds.size() == 8
+        && data.totalRequiredMissions == 8
+        && isScoreRange(data.averageScore)
+        && isShortString(data.predicate, 3, 80)
+        && isShortString(data.issuedAtIso, 10, 64)
+        && data.validationDigest is string
+        && data.validationDigest.size() == 64
+        && data.validationDigest.matches('^[a-f0-9]{64}$')
+        && data.serverVerified == true
+        && data.createdAt is timestamp;
+    }
+
+    // --- 1. users (PII Isolated, Owner Only) ---
+    match /users/{userId} {
+      allow get: if isOwner(userId) && isValidId(userId);
+      allow list: if false;
+      allow create: if isOwner(userId)
+        && isEmailVerified()
+        && isValidId(userId)
+        && isValidUserProfile(incoming(), userId)
+        && incoming().createdAt == request.time
+        && incoming().updatedAt == request.time;
+      allow update: if isOwner(userId)
+        && isEmailVerified()
+        && isValidId(userId)
+        && isValidUserProfile(incoming(), userId)
+        && incoming().uid == existing().uid
+        && incoming().role == existing().role
+        && incoming().createdAt == existing().createdAt
+        && incoming().updatedAt == request.time
+        && incoming().diff(existing()).affectedKeys().hasOnly([
+          'displayName', 'certificateName', 'email', 'photoURL', 'updatedAt'
+        ]);
+      allow delete: if false;
+    }
+
+    // --- 2. regions (Master Reference Read-Only for Signed-In Users) ---
+    match /regions/{regionId} {
+      allow get: if isSignedIn() && isValidId(regionId);
+      allow list: if isSignedIn();
+      allow write: if false;
+    }
+
+    // --- 3. missions (Master Reference Read-Only for Signed-In Users) ---
+    match /missions/{missionId} {
+      allow get: if isSignedIn() && isValidId(missionId);
+      allow list: if isSignedIn();
+      allow write: if false;
+    }
+
+    // --- 4. questions (Backend-Only Answer Keys: Strictly Blocked from Client) ---
+    match /questions/{questionId} {
+      allow read, write: if false;
+    }
+
+    // --- 5. missionAttempts (Owner-Scoped Append-Only Audit Log) ---
+    match /missionAttempts/{attemptId} {
+      allow get: if isSignedIn() && isValidId(attemptId) && (resource == null || existing().userId == request.auth.uid);
+      allow list: if isSignedIn() && existing().userId == request.auth.uid;
+      allow create: if isSignedIn()
+        && isEmailVerified()
+        && isValidId(attemptId)
+        && isValidMissionAttempt(incoming())
+        && incoming().attemptId == attemptId
+        && incoming().userId == request.auth.uid
+        && incoming().createdAt == request.time;
+      allow update, delete: if false;
+    }
+
+    // --- 6. simulationResults (Owner-Scoped Upsertable Mission Results) ---
+    match /simulationResults/{resultId} {
+      allow get: if isSignedIn() && isValidId(resultId) && (resource == null || existing().userId == request.auth.uid);
+      allow list: if isSignedIn() && existing().userId == request.auth.uid;
+      allow create: if isSignedIn()
+        && isEmailVerified()
+        && isValidId(resultId)
+        && isValidSimulationResult(incoming())
+        && incoming().resultId == resultId
+        && incoming().userId == request.auth.uid
+        && incoming().createdAt == request.time
+        && incoming().updatedAt == request.time;
+      allow update: if isSignedIn()
+        && isEmailVerified()
+        && isValidId(resultId)
+        && isValidSimulationResult(incoming())
+        && existing().userId == request.auth.uid
+        && incoming().userId == existing().userId
+        && incoming().resultId == existing().resultId
+        && incoming().regionId == existing().regionId
+        && incoming().missionId == existing().missionId
+        && incoming().createdAt == existing().createdAt
+        && incoming().updatedAt == request.time
+        && (
+          // Action: Update simulation / decision / challenge snapshot
+          incoming().diff(existing()).affectedKeys().hasOnly([
+            'riskScore', 'riskCategory', 'decisionActionId', 'decisionActionLabel',
+            'decisionScore', 'overallScore', 'fiveMetrics', 'stemScores',
+            'latestDecisionRecord', 'latestChallengeRecord',
+            'isMissionCompleted', 'challengeProof', 'updatedAt'
+          ])
+        );
+      allow delete: if false;
+    }
+
+    // --- 7. playerProgress (Owner-Scoped State Restoration) ---
+    match /playerProgress/{userId} {
+      allow get: if isOwner(userId) && isValidId(userId);
+      allow list: if false;
+      allow create: if isOwner(userId)
+        && isEmailVerified()
+        && isValidId(userId)
+        && isValidPlayerProgress(incoming(), userId)
+        && incoming().createdAt == request.time
+        && incoming().updatedAt == request.time;
+      allow update: if isOwner(userId)
+        && isEmailVerified()
+        && isValidId(userId)
+        && isValidPlayerProgress(incoming(), userId)
+        && incoming().userId == existing().userId
+        && incoming().createdAt == existing().createdAt
+        && incoming().updatedAt == request.time
+        && (
+          // Action: Update mission progress or attach certificate
+          incoming().diff(existing()).affectedKeys().hasOnly([
+            'activeRegionId', 'activeMissionId',
+            'completedMissionIds', 'inProgressMissionIds',
+            'totalCompletedMissions', 'averageOverallScore',
+            'certificateId', 'updatedAt'
+          ])
+        );
+      allow delete: if false;
+    }
+
+    // --- 8. certificates (Owner-Readable, Immutable, Server-Signed Only) ---
+    match /certificates/{certificateId} {
+      allow get: if isSignedIn() && isValidId(certificateId) && (resource == null || existing().userId == request.auth.uid);
+      allow list: if isSignedIn() && existing().userId == request.auth.uid;
+      allow create: if isSignedIn()
+        && isEmailVerified()
+        && isValidId(certificateId)
+        && isValidCertificate(incoming())
+        && incoming().certificateId == certificateId
+        && incoming().userId == request.auth.uid
+        && incoming().createdAt == request.time;
+      allow update, delete: if false;
+    }
+  }
+}

@@ -1,0 +1,609 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Profil siswa terautentikasi Google pada aplikasi SIAGA KARHUTLA.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "UID Firebase Auth pemilik akun siswa."
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120,
+          "description": "Nama tampilan siswa."
+        },
+        "certificateName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120,
+          "description": "Nama lengkap siswa untuk dicetak pada sertifikat kelulusan."
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "maxLength": 180,
+          "description": "Alamat email Google terverifikasi milik siswa."
+        },
+        "photoURL": {
+          "type": "string",
+          "maxLength": 512,
+          "description": "URL avatar profil siswa."
+        },
+        "role": {
+          "type": "string",
+          "enum": ["student"],
+          "maxLength": 20,
+          "description": "Peran pengguna standar yang dikunci menjadi student."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Waktu pembuatan dokumen di server."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Waktu pembaruan terakhir dokumen di server."
+        }
+      },
+      "required": ["uid", "displayName", "email", "role", "createdAt", "updatedAt"]
+    },
+    "RegionMaster": {
+      "title": "RegionMaster",
+      "description": "Data master wilayah kabupaten/kota Kalimantan Barat (hanya dapat dikelola backend).",
+      "type": "object",
+      "properties": {
+        "regionId": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "Slug identitas kabupaten/kota."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 120,
+          "description": "Nama wilayah administrasi."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["bahaya", "waspada", "aman"],
+          "maxLength": 20,
+          "description": "Tingkat kerawanan acuan wilayah."
+        },
+        "biomeType": {
+          "type": "string",
+          "maxLength": 180,
+          "description": "Karakteristik ekosistem utama."
+        },
+        "defaultQuestionCount": {
+          "type": "number",
+          "description": "Jumlah soal tantangan sektor (5, 6, atau 7)."
+        }
+      },
+      "required": ["regionId", "name", "status", "biomeType", "defaultQuestionCount"]
+    },
+    "MissionMaster": {
+      "title": "MissionMaster",
+      "description": "Data master skenario misi per titik simulasi Kalimantan Barat (hanya dikelola backend).",
+      "type": "object",
+      "properties": {
+        "missionId": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "Identitas unik misi simulasi."
+        },
+        "missionCode": {
+          "type": "string",
+          "maxLength": 32,
+          "description": "Kode sektor misi."
+        },
+        "regionId": {
+          "type": "string",
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "Referensi regionId."
+        },
+        "scenarioTitle": {
+          "type": "string",
+          "maxLength": 180,
+          "description": "Judul skenario simulasi."
+        },
+        "riskLevel": {
+          "type": "string",
+          "enum": ["bahaya", "waspada", "aman"],
+          "maxLength": 20,
+          "description": "Klasifikasi kerawanan skenario."
+        },
+        "challengeCount": {
+          "type": "number",
+          "description": "Jumlah pertanyaan tantangan misi."
+        }
+      },
+      "required": ["missionId", "missionCode", "regionId", "scenarioTitle", "riskLevel", "challengeCount"]
+    },
+    "ChallengeQuestionMaster": {
+      "title": "ChallengeQuestionMaster",
+      "description": "Bank soal master beserta kunci jawaban (tertutup mutlak bagi klien; hanya diakses backend).",
+      "type": "object",
+      "properties": {
+        "questionId": {
+          "type": "string",
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "ID unik pertanyaan."
+        },
+        "stemCategory": {
+          "type": "string",
+          "enum": ["S", "T", "E", "M"],
+          "maxLength": 4,
+          "description": "Kategori STEM."
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": ["mudah", "sedang", "sulit"],
+          "maxLength": 16,
+          "description": "Tingkat kesulitan."
+        },
+        "weight": {
+          "type": "number",
+          "description": "Bobot penilaian soal."
+        },
+        "correctOptionId": {
+          "type": "string",
+          "maxLength": 32,
+          "description": "Kunci jawaban rahasia backend."
+        }
+      },
+      "required": ["questionId", "stemCategory", "difficulty", "weight", "correctOptionId"]
+    },
+    "MissionAttempt": {
+      "title": "MissionAttempt",
+      "description": "Catatan percobaan jawaban tantangan STEM dan keputusan mitigasi milik siswa.",
+      "type": "object",
+      "properties": {
+        "attemptId": {
+          "type": "string",
+          "minLength": 4,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "Identitas dokumen percobaan."
+        },
+        "userId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "UID pemilik percobaan."
+        },
+        "regionId": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "Slug wilayah."
+        },
+        "missionId": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "ID misi."
+        },
+        "attemptType": {
+          "type": "string",
+          "enum": ["challenge", "decision"],
+          "maxLength": 24,
+          "description": "Jenis percobaan misi."
+        },
+        "sessionId": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "ID sesi tantangan backend atau record keputusan."
+        },
+        "questionCount": {
+          "type": "number",
+          "description": "Jumlah soal pada tantangan (5, 6, atau 7)."
+        },
+        "correctCount": {
+          "type": "number",
+          "description": "Jumlah jawaban benar terverifikasi backend."
+        },
+        "accuracyScore": {
+          "type": "number",
+          "description": "Skor akurasi ternormalisasi (0-100)."
+        },
+        "analysisQualityScore": {
+          "type": "number",
+          "description": "Skor kualitas analisis ternormalisasi (0-100)."
+        },
+        "completionTimeScore": {
+          "type": "number",
+          "description": "Skor waktu penyelesaian ternormalisasi (0-100)."
+        },
+        "elapsedSeconds": {
+          "type": "number",
+          "description": "Durasi penyelesaian terukur server."
+        },
+        "targetSeconds": {
+          "type": "number",
+          "description": "Target waktu ideal proporsional."
+        },
+        "totalWeight": {
+          "type": "number",
+          "description": "Total bobot soal sesi."
+        },
+        "earnedWeight": {
+          "type": "number",
+          "description": "Total bobot diperoleh."
+        },
+        "compositeScore": {
+          "type": "number",
+          "description": "Skor akhir percobaan (0-100)."
+        },
+        "selectedActionId": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "ID tindakan mitigasi terpilih (untuk tipe decision)."
+        },
+        "suitabilityLabel": {
+          "type": "string",
+          "maxLength": 80,
+          "description": "Label kesesuaian tindakan mitigasi."
+        },
+        "answersSummary": {
+          "type": "array",
+          "description": "Daftar ringkas jawaban terverifikasi backend (maksimal 7 butir)."
+        },
+        "serverProof": {
+          "type": "string",
+          "maxLength": 256,
+          "description": "Tanda tangan validasi backend untuk percobaan tantangan."
+        },
+        "completedAtIso": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "Timestamp ISO penyelesaian."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Waktu pembuatan dokumen di server."
+        }
+      },
+      "required": [
+        "attemptId",
+        "userId",
+        "regionId",
+        "missionId",
+        "attemptType",
+        "compositeScore",
+        "completedAtIso",
+        "createdAt"
+      ]
+    },
+    "SimulationResult": {
+      "title": "SimulationResult",
+      "description": "Hasil gabungan prediksi Risk Engine, Decision Engine, dan 5 dimensi Scoring Engine per misi siswa.",
+      "type": "object",
+      "properties": {
+        "resultId": {
+          "type": "string",
+          "minLength": 4,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "ID dokumen hasil simulasi."
+        },
+        "userId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "UID pemilik hasil."
+        },
+        "regionId": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "Slug wilayah."
+        },
+        "regionName": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 120,
+          "description": "Nama wilayah."
+        },
+        "missionId": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "ID misi."
+        },
+        "missionCode": {
+          "type": "string",
+          "maxLength": 32,
+          "description": "Kode misi."
+        },
+        "riskScore": {
+          "type": "number",
+          "description": "Skor prediksi kerawanan Risk Engine (0-100)."
+        },
+        "riskCategory": {
+          "type": "string",
+          "enum": ["rendah", "sedang", "tinggi"],
+          "maxLength": 20,
+          "description": "Kategori kerawanan hasil prediksi."
+        },
+        "decisionActionId": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "Tindakan mitigasi terakhir."
+        },
+        "decisionActionLabel": {
+          "type": "string",
+          "maxLength": 120,
+          "description": "Label tindakan mitigasi."
+        },
+        "decisionScore": {
+          "type": "number",
+          "description": "Skor ketepatan keputusan (0-100)."
+        },
+        "overallScore": {
+          "type": "number",
+          "description": "Skor akhir gabungan 5 dimensi (0-100)."
+        },
+        "fiveMetrics": {
+          "type": "object",
+          "description": "Rincian 5 dimensi Scoring Engine."
+        },
+        "stemScores": {
+          "type": "object",
+          "description": "Skor kompetensi S-T-E-M."
+        },
+        "latestDecisionRecord": {
+          "type": "object",
+          "description": "Rekaman lengkap evaluasi Decision Engine untuk pemulihan state."
+        },
+        "latestChallengeRecord": {
+          "type": "object",
+          "description": "Rekaman lengkap tantangan STEM terverifikasi untuk pemulihan state."
+        },
+        "isMissionCompleted": {
+          "type": "boolean",
+          "description": "Menandakan evaluasi Decision Engine dan Tantangan STEM telah lengkap."
+        },
+        "challengeProof": {
+          "type": "string",
+          "maxLength": 256,
+          "description": "Bukti validasi tantangan dari backend."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Waktu pembuatan dokumen di server."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Waktu pembaruan dokumen di server."
+        }
+      },
+      "required": [
+        "resultId",
+        "userId",
+        "regionId",
+        "regionName",
+        "missionId",
+        "overallScore",
+        "fiveMetrics",
+        "isMissionCompleted",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "PlayerProgress": {
+      "title": "PlayerProgress",
+      "description": "Rekapitulasi progres keseluruhan misi dan kelayakan sertifikat per siswa.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "UID siswa pemilik progres."
+        },
+        "activeRegionId": {
+          "type": "string",
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "Wilayah terakhir yang dibuka."
+        },
+        "activeMissionId": {
+          "type": "string",
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "Misi terakhir yang dibuka."
+        },
+        "completedMissionIds": {
+          "type": "array",
+          "description": "Daftar ID misi yang telah selesai (maksimal 14 item)."
+        },
+        "inProgressMissionIds": {
+          "type": "array",
+          "description": "Daftar ID misi yang sedang dikerjakan (maksimal 14 item)."
+        },
+        "totalCompletedMissions": {
+          "type": "number",
+          "description": "Jumlah misi selesai."
+        },
+        "averageOverallScore": {
+          "type": "number",
+          "description": "Rata-rata skor akhir lintas misi."
+        },
+        "certificateId": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "ID sertifikat resmi jika sudah diterbitkan."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Waktu pembuatan progres di server."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Waktu pembaruan progres di server."
+        }
+      },
+      "required": [
+        "userId",
+        "completedMissionIds",
+        "inProgressMissionIds",
+        "totalCompletedMissions",
+        "averageOverallScore",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "Certificate": {
+      "title": "Certificate",
+      "description": "Sertifikat kelulusan resmi SIAGA KARHUTLA yang divalidasi dan ditandatangani oleh backend.",
+      "type": "object",
+      "properties": {
+        "certificateId": {
+          "type": "string",
+          "minLength": 4,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "Identitas unik dokumen sertifikat."
+        },
+        "userId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "UID siswa penerima sertifikat."
+        },
+        "studentName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120,
+          "description": "Nama lengkap siswa."
+        },
+        "studentEmail": {
+          "type": "string",
+          "format": "email",
+          "maxLength": 180,
+          "description": "Email terverifikasi siswa."
+        },
+        "certificateNumber": {
+          "type": "string",
+          "minLength": 6,
+          "maxLength": 64,
+          "pattern": "^SKH-[0-9]{4}-[A-Z0-9]{6,12}$",
+          "description": "Nomor registrasi sertifikat resmi."
+        },
+        "completedMissionIds": {
+          "type": "array",
+          "description": "Daftar 8 misi wajib yang terverifikasi selesai."
+        },
+        "totalRequiredMissions": {
+          "type": "number",
+          "description": "Jumlah misi wajib yang diselesaikan."
+        },
+        "averageScore": {
+          "type": "number",
+          "description": "Skor rata-rata akhir siswa terverifikasi server."
+        },
+        "predicate": {
+          "type": "string",
+          "maxLength": 80,
+          "description": "Predikat kelulusan."
+        },
+        "issuedAtIso": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "Waktu penerbitan ISO dari server."
+        },
+        "validationDigest": {
+          "type": "string",
+          "minLength": 64,
+          "maxLength": 64,
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "Digest kriptografi HMAC-SHA256 hasil validasi backend."
+        },
+        "serverVerified": {
+          "type": "boolean",
+          "description": "Status validasi backend."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Waktu penyimpanan di Firestore."
+        }
+      },
+      "required": [
+        "certificateId",
+        "userId",
+        "studentName",
+        "studentEmail",
+        "certificateNumber",
+        "completedMissionIds",
+        "totalRequiredMissions",
+        "averageScore",
+        "predicate",
+        "issuedAtIso",
+        "validationDigest",
+        "serverVerified",
+        "createdAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "Profil akun siswa terautentikasi. Hanya pemilik UID yang dapat membaca dan memperbarui."
+    },
+    "/regions/{regionId}": {
+      "schema": { "$ref": "#/entities/RegionMaster" },
+      "description": "Data master 14 kabupaten/kota Kalbar. Hanya dapat dibaca siswa login; tulis klien diblokir."
+    },
+    "/missions/{missionId}": {
+      "schema": { "$ref": "#/entities/MissionMaster" },
+      "description": "Data master skenario misi Kalbar. Hanya dapat dibaca siswa login; tulis klien diblokir."
+    },
+    "/questions/{questionId}": {
+      "schema": { "$ref": "#/entities/ChallengeQuestionMaster" },
+      "description": "Bank soal dan kunci jawaban. Ditutup total untuk akses klien; dikelola khusus backend."
+    },
+    "/missionAttempts/{attemptId}": {
+      "schema": { "$ref": "#/entities/MissionAttempt" },
+      "description": "Riwayat percobaan jawaban dan keputusan mitigasi milik siswa."
+    },
+    "/simulationResults/{resultId}": {
+      "schema": { "$ref": "#/entities/SimulationResult" },
+      "description": "Hasil prediksi Risk Engine, keputusan, dan skor akhir 5 dimensi per misi siswa."
+    },
+    "/playerProgress/{userId}": {
+      "schema": { "$ref": "#/entities/PlayerProgress" },
+      "description": "Progres permainan dan status misi selesai milik siswa untuk pemulihan state."
+    },
+    "/certificates/{certificateId}": {
+      "schema": { "$ref": "#/entities/Certificate" },
+      "description": "Sertifikat kelulusan resmi tervalidasi server (immutable setelah diterbitkan)."
+    }
+  }
+}

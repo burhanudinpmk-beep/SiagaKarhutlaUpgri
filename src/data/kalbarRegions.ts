@@ -1,0 +1,521 @@
+import type { GisLayerSpec, RegionProfile } from '../types/mission';
+
+export const DEFAULT_REGION_ID = 'kubu-raya';
+
+export const KALBAR_REGIONS: RegionProfile[] = [
+  {
+    id: 'kubu-raya',
+    name: 'Kabupaten Kubu Raya',
+    capital: 'Sungai Raya',
+    status: 'bahaya',
+    biomeType: 'Lahan Gambut Pesisir & Delta Kapuas',
+    peatlandShare: '68% Ekosistem Gambut',
+    hotspotReferenceCount: 24,
+    areaKm2: '6.985 km²',
+    elevationProfile: '0 – 25 mdpl',
+    coordinates: {
+      x: 215,
+      y: 355,
+      latLon: '0°13′ LS · 109°24′ BT',
+    },
+    summary:
+      'Kawasan delta gambut dalam dengan akses kanal drainase yang rentan mengering pada puncak musim kemarau serta berdekatan dengan koridor permukiman dan bandara.',
+    briefingObjectives: [
+      'Mengidentifikasi zona kubah gambut dengan kedalaman muka air tanah kritis di sektor selatan.',
+      'Menentukan prioritas jalur sekat bakar dan pos pemantauan terpadu di sepanjang tepian Sungai Kapuas.',
+      'Menyusun rekomendasi mitigasi berbasis prinsip hidrologi gambut untuk mencegah penyebaran asap.',
+    ],
+    strategicAssets: [
+      'Posko Terpadu Manggala Agni Wilayah Pesisir',
+      'Stasiun Pemantau Tinggi Muka Air Tanah Gambut',
+      'Akses Sungai & Kanal Primer Kuala Dua',
+    ],
+    stemFocus: {
+      science: 'Karakteristik oksidasi dan daya simpan air pada tanah gambut tropis Kalimantan Barat.',
+      technology: 'Pemetaan lapisan kerawanan spasial dan interpretasi titik panas satelit resolusi menengah.',
+      engineering: 'Perancangan sekat kanal (canal blocking) dan tata letak sekat bakar berbasis kontur.',
+      mathematics: 'Perhitungan luas zona penyangga, jarak jangkau sumber air, dan estimasi rasio risiko sektor.',
+    },
+  },
+  {
+    id: 'ketapang',
+    name: 'Kabupaten Ketapang',
+    capital: 'Delta Pawan',
+    status: 'bahaya',
+    biomeType: 'Rawa Gambut Selatan & Hutan Dataran Rendah',
+    peatlandShare: '54% Gambut & Lahan Mineral',
+    hotspotReferenceCount: 31,
+    areaKm2: '31.588 km²',
+    elevationProfile: '2 – 480 mdpl',
+    coordinates: {
+      x: 315,
+      y: 498,
+      latLon: '1°50′ LS · 110°12′ BT',
+    },
+    summary:
+      'Wilayah terluas di selatan Kalimantan Barat dengan bentang gambut luas di sekitar Sungai Pawan dan Kendawangan yang membutuhkan koordinasi lintas sektor.',
+    briefingObjectives: [
+      'Memetakan koridor lahan terbuka dan konsesi di sekitar bentang Sungai Pawan.',
+      'Mengevaluasi jarak tempuh tim respons cepat terhadap sektor dengan kepadatan titik api tinggi.',
+      'Mengintegrasikan data tutupan lahan dan arah angin musiman dalam rencana kesiapsiagaan.',
+    ],
+    strategicAssets: [
+      'Koridor Patroli Terpadu Pawan–Kendawangan',
+      'Menara Pantau Api Sektor Matan Hilir',
+      'Embong Penampungan Air Lahan Kering',
+    ],
+    stemFocus: {
+      science: 'Dinamika kelembapan bahan bakar permukaan (serasah hutan dan semak belukar) di selatan khatulistiwa.',
+      technology: 'Pengolahan overlay peta administrasi, jaringan sungai, dan zona prioritas GIS.',
+      engineering: 'Penempatan embung air taktis dan jalur mobilisasi peralatan pemadaman.',
+      mathematics: 'Analisis kepadatan spasial titik rawan per kilometer persegi dan alokasi sumber daya.',
+    },
+  },
+  {
+    id: 'sintang',
+    name: 'Kabupaten Sintang',
+    capital: 'Sintang',
+    status: 'waspada',
+    biomeType: 'Lembah Aluvial Tengah & Perbukitan',
+    peatlandShare: '29% Rawa Lebak & Gambut Tipis',
+    hotspotReferenceCount: 11,
+    areaKm2: '21.635 km²',
+    elevationProfile: '25 – 620 mdpl',
+    coordinates: {
+      x: 475,
+      y: 285,
+      latLon: '0°04′ LU · 111°29′ BT',
+    },
+    summary:
+      'Persimpangan Sungai Kapuas dan Sungai Melawi dengan mosaik hutan sekunder, perladangan, dan lembah aluvial yang memerlukan pemantauan transisi musim.',
+    briefingObjectives: [
+      'Mengamati pola perubahan tutupan lahan di sepanjang jalur transportasi darat dan sungai.',
+      'Menilai kesiapan pos pengawasan di wilayah perbatasan kecamatan rawan kekeringan.',
+      'Menghubungkan variabel meteorologi lokal dengan kerentanan vegetasi campuran.',
+    ],
+    strategicAssets: [
+      'Stasiun Pengamatan Cuaca Lembah Kapuas Tengah',
+      'Jalur Pengawasan Pertemuan Sungai Melawi',
+      'Pos Koordinasi Masyarakat Peduli Api (MPA)',
+    ],
+    stemFocus: {
+      science: 'Hubungan evapotranspirasi vegetasi sekunder terhadap indeks kekeringan permukaan.',
+      technology: 'Pemantauan citra multi-lapisan untuk membedakan area vegetasi padat dan lahan terbuka.',
+      engineering: 'Desain sistem peringatan dini komunitas dan jalur evakuasi asap lintas sungai.',
+      mathematics: 'Pemodelan proporsi wilayah waspada dan rasio cakupan stasiun pengamatan.',
+    },
+  },
+  {
+    id: 'sambas',
+    name: 'Kabupaten Sambas',
+    capital: 'Sambas',
+    status: 'waspada',
+    biomeType: 'Pesisir Utara, Mangrove & Gambut Dangkal',
+    peatlandShare: '34% Lahan Basah Pesisir',
+    hotspotReferenceCount: 9,
+    areaKm2: '6.395 km²',
+    elevationProfile: '0 – 310 mdpl',
+    coordinates: {
+      x: 175,
+      y: 120,
+      latLon: '1°21′ LU · 109°18′ BT',
+    },
+    summary:
+      'Wilayah pesisir paling utara Kalimantan Barat yang berhadapan langsung dengan angin laut dan memiliki kantong lahan gambut dangkal produktif.',
+    briefingObjectives: [
+      'Mengidentifikasi pengaruh angin pesisir terhadap arah perambatan potensi api permukaan.',
+      'Memetakan batas antara zona konservasi pesisir dan lahan budidaya masyarakat.',
+      'Menyusun tata kelola pembukaan lahan tanpa bakar di zona penyangga utara.',
+    ],
+    strategicAssets: [
+      'Pos Pengawasan Pesisir Paloh–Sambas',
+      'Jaringan Kanal Tata Air Pertanian Pesisir',
+      'Menara Pengamat Sektor Subah',
+    ],
+    stemFocus: {
+      science: 'Interaksi mikroklimat pesisir dan kadar air tanah aluvial berpasir.',
+      technology: 'Integrasi layer arah angin dominan dan batas hidrologi dalam antarmuka GIS.',
+      engineering: 'Rekayasa tata air mikro dan sekat vegetasi tahan api di tepi lahan budidaya.',
+      mathematics: 'Kalkulasi vektor kecepatan angin terhadap estimasi perluasan zona penyangga.',
+    },
+  },
+  {
+    id: 'sanggau',
+    name: 'Kabupaten Sanggau',
+    capital: 'Sanggau',
+    status: 'cukup-aman',
+    biomeType: 'Dataran Bergelombang & Hutan Lindung Tengah',
+    peatlandShare: '14% Rawa Lokal & Dominan Mineral',
+    hotspotReferenceCount: 2,
+    areaKm2: '12.857 km²',
+    elevationProfile: '18 – 540 mdpl',
+    coordinates: {
+      x: 340,
+      y: 265,
+      latLon: '0°07′ LU · 110°35′ BT',
+    },
+    summary:
+      'Koridor tengah Kalimantan Barat dengan dominasi tanah mineral dan tutupan tajuk hutan yang relatif terjaga sebagai zona pengawasan preventif.',
+    briefingObjectives: [
+      'Mempertahankan status aman melalui pemantauan rutin titik akses hutan lindung.',
+      'Menganalisis faktor ekologi yang menjaga kelembapan kanopi tetap stabil.',
+      'Menyiapkan skema dukungan logistik bagi wilayah tetangga berstatus waspada atau bahaya.',
+    ],
+    strategicAssets: [
+      'Pusat Koordinasi Daerah Aliran Sungai Kapuas Tengah',
+      'Unit Patroli Pencegahan Terpadu Entikong–Sanggau',
+      'Laboratorium Lapangan Pemantauan Vegetasi',
+    ],
+    stemFocus: {
+      science: 'Peran kerapatan kanopi hutan primer dalam menjaga suhu lantai hutan tetap rendah.',
+      technology: 'Pemanfaatan indeks vegetasi GIS untuk mendeteksi perubahan tutupan dini.',
+      engineering: 'Pemeliharaan infrastruktur pasokan air dan jalur patroli pencegahan.',
+      mathematics: 'Perbandingan rasio kelembapan antarwilayah sebagai acuan ambang batas aman.',
+    },
+  },
+  {
+    id: 'kapuas-hulu',
+    name: 'Kabupaten Kapuas Hulu',
+    capital: 'Putussibau',
+    status: 'cukup-aman',
+    biomeType: 'Hutan Hujan Tropis Pegunungan & Danau Sentarum',
+    peatlandShare: '22% Lahan Basah Danau Sentarum',
+    hotspotReferenceCount: 1,
+    areaKm2: '29.842 km²',
+    elevationProfile: '35 – 1.767 mdpl',
+    coordinates: {
+      x: 620,
+      y: 205,
+      latLon: '0°51′ LU · 112°56′ BT',
+    },
+    summary:
+      'Bentang konservasi hulu Sungai Kapuas yang mencakup Taman Nasional Danau Sentarum dan Betung Kerihun sebagai benteng keanekaragaman hayati Borneo.',
+    briefingObjectives: [
+      'Mempelajari fungsi penyangga hidrologis hutan hulu dan danau musiman terhadap kekeringan.',
+      'Mengaudit jalur akses konservasi untuk pencegahan gangguan vegetasi pada musim kemarau.',
+      'Mendokumentasikan standar ketahanan ekosistem sebagai tolok ukur wilayah lainnya.',
+    ],
+    strategicAssets: [
+      'Balai Konservasi Taman Nasional Danau Sentarum',
+      'Stasiun Hidrologi Hulu Sungai Kapuas',
+      'Pos Pemantauan Kehutanan Putussibau',
+    ],
+    stemFocus: {
+      science: 'Siklus hidrologi hutan hujan tropis dataran tinggi dan regulasi iklim mikro.',
+      technology: 'Pemetaan batas zona inti konservasi dan pemantauan kondisi DAS hulu.',
+      engineering: 'Sistem mitigasi berbasis konservasi ekosistem dan pos pemantau berdaya surya.',
+      mathematics: 'Analisis luasan daerah tangkapan air dan keterkaitannya dengan indeks kerawanan.',
+    },
+  },
+];
+
+export const EXTENDED_KALBAR_REGIONS: RegionProfile[] = [
+  {
+    id: 'kayong-utara',
+    name: 'Kabupaten Kayong Utara',
+    capital: 'Sukadana',
+    status: 'bahaya',
+    biomeType: 'Gambut Pesisir & Penyangga Taman Nasional Gunung Palung',
+    peatlandShare: '58% Ekosistem Gambut & Rawa Pesisir',
+    hotspotReferenceCount: 14,
+    areaKm2: '4.568 km²',
+    elevationProfile: '0 – 1.116 mdpl',
+    coordinates: {
+      x: 245,
+      y: 445,
+      latLon: '1°14′ LS · 109°57′ BT',
+    },
+    summary:
+      'Wilayah pesisir barat daya yang berbatasan langsung dengan kawasan konservasi Gunung Palung serta bentang gambut rawan kekeringan di Simpang Hilir.',
+    briefingObjectives: [
+      'Menjaga zona penyangga gambut di sekitar Taman Nasional Gunung Palung dari api permukaan.',
+      'Menentukan lokasi sekat kanal prioritas di koridor Sukadana–Teluk Batang.',
+      'Mengukur jarak sumber air terdekat untuk dukungan tim pemadaman cepat.',
+    ],
+    strategicAssets: [
+      'Pos Penyangga Konservasi Taman Nasional Gunung Palung',
+      'Stasiun Hidrologi Gambut Simpang Hilir',
+      'Jalur Logistik Laut Teluk Batang',
+    ],
+    stemFocus: {
+      science: 'Keseimbangan hidrologis antara ekosistem gunung pesisir dan dataran gambut.',
+      technology: 'Pemantauan overlay batas taman nasional dengan sebaran titik simulasi.',
+      engineering: 'Sistem pembasahan gambut dan sekat bakar di perbatasan kawasan lindung.',
+      mathematics: 'Perhitungan luas zona penyangga minimum dan rasio kebutuhan air pemadaman.',
+    },
+  },
+  {
+    id: 'mempawah',
+    name: 'Kabupaten Mempawah',
+    capital: 'Mempawah',
+    status: 'waspada',
+    biomeType: 'Dataran Pesisir Barat & Gambut Terfragmentasi',
+    peatlandShare: '37% Gambut Pesisir & Lahan Aluvial',
+    hotspotReferenceCount: 8,
+    areaKm2: '2.797 km²',
+    elevationProfile: '0 – 280 mdpl',
+    coordinates: {
+      x: 190,
+      y: 265,
+      latLon: '0°22′ LU · 108°58′ BT',
+    },
+    summary:
+      'Koridor pesisir yang menghubungkan Pontianak dan Singkawang dengan kantong lahan gambut pertanian dan semak belukar yang rentan pada musim kering.',
+    briefingObjectives: [
+      'Mengawasi koridor lahan terbuka di sepanjang jalur lintas pesisir barat.',
+      'Menilai efektivitas kanal tersier dalam menjaga kelembapan tanah gambut.',
+      'Mengkoordinasikan patroli bersama warga di kawasan Sungai Kunyit dan Toho.',
+    ],
+    strategicAssets: [
+      'Posko Siaga Pesisir Sungai Pinyuh',
+      'Jaringan Kanal Irigasi & Sekat Air Anjongan',
+      'Menara Pengamat Sektor Segedong',
+    ],
+    stemFocus: {
+      science: 'Pengaruh salinitas pesisir dan penurunan muka air terhadap kerawanan gambut.',
+      technology: 'Analisis GIS koridor jalan dan kedekatan permukiman terhadap zona rawan.',
+      engineering: 'Pembangunan pintu air pengatur muka air gambut di lahan pertanian.',
+      mathematics: 'Estimasi waktu respons tim sepanjang jaringan jalan pesisir.',
+    },
+  },
+  {
+    id: 'bengkayang',
+    name: 'Kabupaten Bengkayang',
+    capital: 'Bengkayang',
+    status: 'waspada',
+    biomeType: 'Perbukitan Barat Laut & Lahan Kering Terbuka',
+    peatlandShare: '16% Rawa Pesisir & Dominan Perbukitan',
+    hotspotReferenceCount: 6,
+    areaKm2: '5.396 km²',
+    elevationProfile: '0 – 1.250 mdpl',
+    coordinates: {
+      x: 215,
+      y: 175,
+      latLon: '0°49′ LU · 109°29′ BT',
+    },
+    summary:
+      'Wilayah perbatasan utara yang memadukan pesisir Sungai Raya Kepulauan dengan perbukitan curam dan padang alang-alang yang cepat mengering.',
+    briefingObjectives: [
+      'Mengantisipasi perambatan api pada lereng bervegetasi semak dan ilalang.',
+      'Menilai jalur akses mobilisasi di wilayah berbukit dan perbatasan Jagoi Babang.',
+      'Menyusun pola patroli pencegahan pada lahan terbuka non-gambut.',
+    ],
+    strategicAssets: [
+      'Pos Pengamatan Lereng Sanggau Ledo',
+      'Stasiun Meteorologi Perbatasan Utara',
+      'Unit Respons Cepat Bengkayang Kota',
+    ],
+    stemFocus: {
+      science: 'Percepatan perambatan api permukaan berdasarkan kemiringan lereng dan angin lembah.',
+      technology: 'Pemanfaatan peta kontur topografi untuk memetakan sektor berlereng curam.',
+      engineering: 'Desain sekat bakar lereng dan embung tangkapan air hujan dataran tinggi.',
+      mathematics: 'Perhitungan gradien elevasi terhadap estimasi kecepatan penjalaran api.',
+    },
+  },
+  {
+    id: 'landak',
+    name: 'Kabupaten Landak',
+    capital: 'Ngabang',
+    status: 'waspada',
+    biomeType: 'Dataran Aluvial Sungai Landak & Hutan Sekunder',
+    peatlandShare: '19% Rawa Lembah & Lahan Mineral',
+    hotspotReferenceCount: 7,
+    areaKm2: '9.909 km²',
+    elevationProfile: '15 – 780 mdpl',
+    coordinates: {
+      x: 270,
+      y: 245,
+      latLon: '0°23′ LU · 109°57′ BT',
+    },
+    summary:
+      'Wilayah cekungan Sungai Landak di bagian tengah barat dengan tutupan hutan sekunder, perkebunan, dan lahan budidaya berisiko sedang.',
+    briefingObjectives: [
+      'Memantau sektor hulu dan hilir Daerah Aliran Sungai Landak saat curah hujan menurun.',
+      'Mengidentifikasi area semak kering di sekitar jalur penghubung Ngabang–Mandor.',
+      'Mengoptimalkan jaringan pos pemantau berbasis masyarakat peduli api.',
+    ],
+    strategicAssets: [
+      'Pos Pemantau DAS Landak Ngabang',
+      'Cagar Alam Mandor sebagai Zona Penyangga',
+      'Stasiun Curah Hujan Sengah Temila',
+    ],
+    stemFocus: {
+      science: 'Hubungan kadar air serasah hutan sekunder dengan durasi hari tanpa hujan.',
+      technology: 'Overlay jaringan sungai dan peta batas kawasan cagar alam dalam GIS.',
+      engineering: 'Pengaturan jalur inspeksi dan titik pengambilan air pompa portabel.',
+      mathematics: 'Analisis distribusi jarak antar pos pemantau di cekungan DAS Landak.',
+    },
+  },
+  {
+    id: 'sekadau',
+    name: 'Kabupaten Sekadau',
+    capital: 'Sekadau',
+    status: 'cukup-aman',
+    biomeType: 'Lembah Sungai Kapuas & Perbukitan Mineral',
+    peatlandShare: '12% Rawa Lokal & Dominan Tanah Mineral',
+    hotspotReferenceCount: 3,
+    areaKm2: '5.444 km²',
+    elevationProfile: '20 – 450 mdpl',
+    coordinates: {
+      x: 400,
+      y: 280,
+      latLon: '0°01′ LU · 110°54′ BT',
+    },
+    summary:
+      'Koridor tengah Kalimantan Barat di tepian Sungai Sekadau dan Kapuas dengan kondisi kelembapan vegetasi yang relatif terkendali.',
+    briefingObjectives: [
+      'Mempertahankan kesiapsiagaan preventif di sepanjang koridor perkebunan dan hutan rakyat.',
+      'Memantau kondisi aliran anak Sungai Kapuas sebagai sumber pasokan air cadangan.',
+      'Menyusun rencana dukungan cepat menuju wilayah tetangga bila terjadi peningkatan risiko.',
+    ],
+    strategicAssets: [
+      'Pos Koordinasi Sungai Sekadau',
+      'Jaringan Pengamatan Kecamatan Belitang',
+      'Pusat Informasi Cuaca Lokal Sekadau Hilir',
+    ],
+    stemFocus: {
+      science: 'Dinamika kelembapan tanah mineral berlempung terhadap ketahanan vegetasi.',
+      technology: 'Pemetaan GIS batas kecamatan dan akses transportasi sungai.',
+      engineering: 'Pemeliharaan sistem tandon air desa siaga api.',
+      mathematics: 'Perhitungan kapasitas pasokan air terhadap luas area pantauan.',
+    },
+  },
+  {
+    id: 'melawi',
+    name: 'Kabupaten Melawi',
+    capital: 'Nanga Pinoh',
+    status: 'waspada',
+    biomeType: 'Lembah Sungai Melawi & Pegunungan Schwaner',
+    peatlandShare: '8% Rawa Lembah & Dominan Hutan Perbukitan',
+    hotspotReferenceCount: 5,
+    areaKm2: '10.640 km²',
+    elevationProfile: '35 – 1.620 mdpl',
+    coordinates: {
+      x: 495,
+      y: 365,
+      latLon: '0°20′ LS · 111°45′ BT',
+    },
+    summary:
+      'Wilayah selatan-tengah yang berbatasan dengan Taman Nasional Bukit Baka–Bukit Raya dengan variasi topografi lembah sungai hingga pegunungan.',
+    briefingObjectives: [
+      'Melindungi koridor penyangga Taman Nasional Bukit Baka–Bukit Raya dari kebakaran hutan.',
+      'Memantau pola pembukaan lahan di lembah Sungai Melawi pada musim kemarau.',
+      'Menentukan lokasi menara pantau strategis di wilayah perbukitan selatan.',
+    ],
+    strategicAssets: [
+      'Balai Penyangga Taman Nasional Bukit Baka–Bukit Raya',
+      'Posko Terpadu Nanga Pinoh',
+      'Stasiun Pemantau Sungai Pinoh–Melawi',
+    ],
+    stemFocus: {
+      science: 'Variasi suhu dan kelembapan udara berdasarkan ketinggian tempat di Pegunungan Schwaner.',
+      technology: 'Integrasi peta topografi dan batas kawasan konservasi dalam analisis GIS.',
+      engineering: 'Perancangan jalur patroli dan titik hidran lapangan bergravitasi.',
+      mathematics: 'Analisis cakupan pengawasan visual dari titik elevasi menara pantau.',
+    },
+  },
+  {
+    id: 'kota-pontianak',
+    name: 'Kota Pontianak',
+    capital: 'Pontianak',
+    status: 'waspada',
+    biomeType: 'Delta Muara Kapuas & Gambut Perkotaan',
+    peatlandShare: '42% Gambut Dangkal Perkotaan',
+    hotspotReferenceCount: 4,
+    areaKm2: '118 km²',
+    elevationProfile: '0 – 1,5 mdpl',
+    coordinates: {
+      x: 205,
+      y: 310,
+      latLon: '0°01′ LS · 109°20′ BT',
+    },
+    summary:
+      'Ibu kota Provinsi Kalimantan Barat di garis khatulistiwa yang memiliki kantong lahan gambut pinggiran dan sensitif terhadap paparan asap lintas wilayah.',
+    briefingObjectives: [
+      'Mencegah titik api pada lahan gambut pinggiran kota di Pontianak Utara dan Tenggara.',
+      'Menilai risiko paparan kabut asap terhadap fasilitas publik dan transportasi.',
+      'Mengelola jaringan kanal drainase perkotaan agar tetap terisi air saat kemarau.',
+    ],
+    strategicAssets: [
+      'Pusat Pengendali Operasi Karhutla Provinsi Kalbar',
+      'Stasiun Pemantau Kualitas Udara Khatulistiwa',
+      'Jaringan Kanal & Parit Primer Sungai Kapuas Kecil',
+    ],
+    stemFocus: {
+      science: 'Dampak partikulat asap kebakaran gambut (PM2.5) terhadap kualitas udara perkotaan.',
+      technology: 'Pemantauan spasial resolusi tinggi untuk zona penyangga gambut pinggiran kota.',
+      engineering: 'Tata kelola parit dan sumur bor pantau air tanah di kawasan padat penduduk.',
+      mathematics: 'Pemodelan arah dispersi asap berdasarkan kecepatan angin dan jarak sumber.',
+    },
+  },
+  {
+    id: 'kota-singkawang',
+    name: 'Kota Singkawang',
+    capital: 'Singkawang',
+    status: 'cukup-aman',
+    biomeType: 'Pesisir Barat & Perbukitan Poteng',
+    peatlandShare: '15% Lahan Basah Pesisir',
+    hotspotReferenceCount: 2,
+    areaKm2: '504 km²',
+    elevationProfile: '0 – 980 mdpl',
+    coordinates: {
+      x: 170,
+      y: 165,
+      latLon: '0°54′ LU · 108°59′ BT',
+    },
+    summary:
+      'Kota pesisir utara dengan kawasan hutan lindung Gunung Poteng sebagai penyangga hidrologi sekaligus kantong lahan semak pesisir di bagian selatan.',
+    briefingObjectives: [
+      'Menjaga kawasan hutan lindung Gunung Poteng sebagai cadangan air bersih dan penahan kekeringan.',
+      'Memantau lahan terbuka di sektor Singkawang Selatan yang berdekatan dengan Bengkayang.',
+      'Melatih koordinasi siaga api berbasis kelurahan tangguh bencana.',
+    ],
+    strategicAssets: [
+      'Pos Pengawasan Kawasan Gunung Poteng',
+      'Stasiun Meteorologi Pesisir Singkawang',
+      'Unit Pemadam Cepat Singkawang Selatan',
+    ],
+    stemFocus: {
+      science: 'Fungsi daerah tangkapan air hutan pegunungan pesisir dalam menjaga kelembapan mikro.',
+      technology: 'Pemetaan batas hutan lindung dan zona permukiman pesisir berbasis GIS.',
+      engineering: 'Sistem hidran kering dan jalur akses kendaraan pemadam pada kontur perbukitan.',
+      mathematics: 'Analisis kepadatan risiko relatif terhadap luas wilayah administrasi kota.',
+    },
+  },
+];
+
+export const ALL_KALBAR_REGIONS: RegionProfile[] = [
+  ...KALBAR_REGIONS,
+  ...EXTENDED_KALBAR_REGIONS,
+];
+
+export const GIS_LAYERS: GisLayerSpec[] = [
+  {
+    id: 'batas-wilayah',
+    label: 'Batas Administrasi Wilayah',
+    category: 'Layer Dasar',
+    description: 'Menampilkan delineasi batas kabupaten dan sektor pengawasan di Kalimantan Barat.',
+    defaultVisible: true,
+  },
+  {
+    id: 'zona-gambut',
+    label: 'Sebaran Ekosistem Gambut',
+    category: 'Layer Ekologi',
+    description: 'Menunjukkan distribusi kesatuan hidrologis gambut yang sensitif terhadap kebakaran bawah permukaan.',
+    defaultVisible: true,
+  },
+  {
+    id: 'das-kapuas',
+    label: 'Jaringan Sungai & DAS Kapuas',
+    category: 'Layer Hidrologi',
+    description: 'Memetakan aliran sungai utama sebagai sumber pasokan air dan pembatas alami api.',
+    defaultVisible: true,
+  },
+  {
+    id: 'titik-referensi',
+    label: 'Titik Pengamatan Awal',
+    category: 'Layer Pemantauan',
+    description: 'Menampilkan posisi stasiun pantau dan sektor prioritas briefing tanpa kalkulasi simulasi aktif.',
+    defaultVisible: false,
+  },
+];
